@@ -1,0 +1,59 @@
+.about {
+    height: 500px;
+    background-color: #9D9EA1;
+    padding: 60px;
+    background-image: url('/img/about/aboutMap.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+    background-size: 70%  100%;
+
+    &__headline {
+        width: 80%;
+        color: #fff;
+
+        .info {
+            font-family: ' Bai Jamjuree', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 25px;
+            display: flex;
+align-items: center;
+            &::before{
+                content: '';
+                height: 2px;
+                background-color: #fff;
+                width: 65px;
+                margin-right: 14px;
+
+            }
+
+        }
+
+        .title {
+            padding-top: 5px;
+            font-family: 'Bai Jamjuree', sans-serif;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 60px;
+
+        }
+
+        .text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            margin-left: 200px;
+            width: 740px;
+
+        }
+    }
+
+    &__banner{
+        position: relative;
+        margin: 0 0 0 auto;
+        bottom: 350px;
+        display: flex;
+    }
+}

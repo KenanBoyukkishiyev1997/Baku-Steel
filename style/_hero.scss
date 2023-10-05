@@ -1,0 +1,218 @@
+.hero {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 41.19%, rgba(255, 255, 255, 0.95) 94.79%);
+    position: relative;
+
+    &-slider {
+        position: relative;
+
+     &-item{
+
+        background-repeat: no-repeat;
+        background-size: cover;
+height: 982px !important;
+     }
+
+    }
+
+
+    &__info {
+        position: absolute;
+        bottom: 200px;
+        display: flex;
+        align-items: center;
+
+        &-item {
+            color: #fff;
+            display: flex;
+            align-items: center;
+            margin-right: 40px;
+
+            .title {
+                font-family: 'Bai Jamjuree', sans-serif;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 45px;
+                margin-right: 8px;
+
+            }
+
+            .text {
+                font-family: 'Bai Jamjuree', sans-serif;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 18px;
+                width: 123px;
+
+            }
+        }
+
+        &-first {
+            background-color: #9F2D2DE5;
+            display: flex;
+            padding: 25px 50px;
+            height: 95px;
+            align-items: center;
+
+        }
+
+        &-second {
+            background-color: #fff;
+            padding: 25px 50px;
+            display: flex;
+            height: 95px;
+            align-items: center;
+
+            img {
+                margin-right: 8px;
+            }
+
+            .text {
+                font-family: 'Bai Jamjuree', sans-serif;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 18px;
+
+            }
+        }
+    }
+
+    &__result {
+        display: flex;
+        position: absolute;
+        bottom: 100px;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-right: 100px;
+
+            .text {
+                margin-left: 5px;
+                font-family: 'Bai Jamjuree', sans-serif;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 20px;
+                color: #1B1B1B;
+
+           
+            }
+
+            .num {
+                /* Add common styles for all elements with the .num class here */
+                width: 100%;
+                font-family: 'Bai Jamjuree', sans-serif;
+                font-size: 64px;
+                font-weight: 700;
+                line-height: 80px;
+                color: #36363633;
+                border-bottom: 3px solid #F02C00;
+                position: absolute;
+                left: 53px;
+                top: -20px;
+                width: 70px;
+              }
+
+              
+
+        
+        }
+    }
+
+.tns-controls button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+
+    &:hover {
+        background-color: #555;
+
+    }
+
+    &[disabled] {
+        background-color: #999;
+        cursor: not-allowed;
+    }
+
+}
+
+.tns-nav {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 0;
+    padding: 30px 0;
+
+    button {
+        background-color: #ACACAC;
+        width: 10px;
+        height: 10px;
+        border: none;
+        border-radius: 50%;
+        margin: 0 5px;
+        /* Adjust the spacing between dots */
+
+        &.tns-nav-active {
+            background-color: #9F2D2DE5;
+        }
+    }
+}
+
+.tns-item {
+    height: auto;
+    position: relative;
+    display: inline-block;
+
+    /* Ensures container size is based on image size */
+    img {
+        width: 100%;
+        display: block;
+        height: auto;
+        z-index: 2;
+    }
+
+
+
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 20%;
+        /* Adjust the height of the gradient overlay at the top */
+        background: linear-gradient(rgba(239, 236, 236, 0.6), rgba(255, 255, 255, 0.6));
+        /* Adjust the gradient colors and transparency as needed */
+        z-index: 1;
+        /* Place the gradient layer above the image */
+        filter: blur(10px);
+        /* Add a blur effect (adjust the value as needed) */
+
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 30%;
+        /* Adjust the height of the gradient overlay at the bottom */
+        background: linear-gradient(rgba(239, 236, 236, 0.6), rgba(255, 255, 255, 0.6));
+        /* Adjust the gradient colors and transparency as needed */
+        z-index: 1;
+        /* Place the gradient layer above the image */
+        filter: blur(10px);
+        /* Add a blur effect (adjust the value as needed) */
+
+    }
+
+
+}
+
+}

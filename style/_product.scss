@@ -1,0 +1,152 @@
+.product {
+    height: 833px;
+    padding: 60px;
+    position: relative;
+
+    &__headline {
+        width: 780px;
+        color: #484848;
+
+        .info {
+            font-family: ' Bai Jamjuree', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 25px;
+            display: flex;
+            color: #9F2D2D;
+            align-items: center;
+            &::before{
+                content: '';
+                height: 2px;
+                background-color: #9F2D2D;
+                width: 65px;
+                margin-right: 14px;
+
+            }
+
+        }
+
+        .title {
+            padding-top: 5px;
+            font-family: 'Bai Jamjuree', sans-serif;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 60px;
+
+        }
+
+        .text {
+            padding-top: 44px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 25px;
+            letter-spacing: 0.005em;
+
+        }
+    }
+
+    &__link {
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 23px;
+        color: #9F2D2D;
+        border-bottom: 1px solid #9F2D2D;
+        padding-bottom: 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 138px;
+        margin: 0 0 0 auto;
+    }
+
+  
+
+
+
+    .slider-prev,
+    .slider-next {
+        cursor: pointer;
+        margin: 0 10px;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: #484848;
+        border: 1px solid #484848;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        bottom: 25%;
+    }
+
+    .slider-prev {margin-left: 50px;}
+    .slick-disabled{
+        background-color: #F2F2F25E !important;
+    }
+
+    .slider-next {
+        
+        bottom: 24.5%;
+        right: -60px;
+    }
+
+    .slider-product-item {
+        height: 340px;
+        background-repeat: no-repeat;
+        margin: 0 0 0 20px;
+        background-size: cover;
+        background-image: url('../img/about/aboutMap.png');
+
+        transition: background-image 0.3s ease;
+        /* Add a transition effect */
+        // &.slick-active:last-child{
+        //     background-color: red !important;
+        // }
+        &:hover {
+            background-image: url('../img/product/product1.png');
+            box-shadow: -20px 8px 36px 0px rgba(0, 0, 0, 0.2);
+
+            a {
+                color: #fff;
+
+                .line {
+                    background-color: #fff;
+                }
+            }
+        }
+
+        a {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 44px;
+            letter-spacing: 0em;
+            width: 160px;
+            height: 100%;
+            text-decoration: none;
+            color: #484848;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            flex-direction: column;
+            transition: color 0.3s ease;
+            /* Add a transition effect */
+
+        }
+
+        .line {
+            height: 3px;
+            background-color: #484848;
+            width: 100%;
+            margin: 20px 0 0;
+        }
+    }
+
+
+}
