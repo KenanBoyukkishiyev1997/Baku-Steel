@@ -8,6 +8,7 @@
 @media screen and (max-width: 767px) {
     .hero__info {
         display: block;
+        bottom: 300px;
 
         &-first {
             display: block;
@@ -17,20 +18,34 @@
         &-item {
             justify-content: center;
             margin: 0;
-            .text{
+
+            .text {
                 width: auto;
             }
         }
     }
 
-    .hero__result{
-        display: block;
-        &-item{
-   .num{
-    font-size: 36px;
-    line-height: 40px;
-    top: 0px;
-   }
+    .header__flex {
+        flex-direction: column;
+    }
+
+    .hero__result {
+        flex-direction: column;
+        justify-content: center;
+        bottom: 20px;
+
+        &-item {
+            margin: 20px 0;
+
+            .num {
+                font-size: 36px;
+                line-height: 40px;
+                top: 0px;
+            }
+
+            img {
+                width: 30px;
+            }
         }
     }
 
@@ -40,6 +55,7 @@
 
         &__banner {
             bottom: 0;
+            width: 100%;
         }
     }
 
@@ -68,6 +84,21 @@
             width: 100%;
             margin-left: 0;
         }
+    }
+
+    .ecologic__leftside{
+        transform: translateY(0);
+        position: relative;
+
+        .ecologic__box{
+            width: 100%;
+            height: 100%;
+        }
+        
+    }
+
+    .space-betwwin{
+        flex-direction: column;
     }
 
     footer {
@@ -103,8 +134,21 @@
 
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .ecologic__leftside{
+        transform: translateY(0);
+        position: relative;
+
+        .ecologic__box{
+            width: 100%;
+        }
+
+    }
+
+    
     .hero__info {
         display: block;
+        bottom: 300px;
 
         &-first {
             display: block;
@@ -112,7 +156,36 @@
         }
 
         &-item {
+            justify-content: center;
             margin: 0;
+
+            .text {
+                width: auto;
+            }
+        }
+    }
+
+    .header__flex {
+        flex-direction: column;
+    }
+
+    .hero__result {
+        flex-direction: column;
+        justify-content: center;
+        bottom: 20px;
+
+        &-item {
+            margin: 20px 0;
+
+            .num {
+                font-size: 36px;
+                line-height: 40px;
+                top: 0px;
+            }
+
+            img {
+                width: 30px;
+            }
         }
     }
 
@@ -122,13 +195,8 @@
 
         &__banner {
             bottom: 0;
+            width: 100%;
         }
-    }
-
-    .product__link {
-        justify-content: center;
-        align-items: center;
-        margin: 20px auto;
     }
 
     .product__headline,
@@ -144,9 +212,8 @@
         }
 
         .title {
-            font-size: 30px;
-            line-height: unset;
-            margin-bottom: 20px;
+            font-size: 34px;
+
         }
 
 

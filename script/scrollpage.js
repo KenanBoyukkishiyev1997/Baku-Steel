@@ -24,9 +24,10 @@ let $sliderEcologic = $('.slider-ecologic')
 
         $slider.slick({
           // Slick slider options here
-          infinite:false,
+          infinite:true,
           mobileFirst:true,//add this one
-
+          autoplay: true,
+          autoplaySpeed: 2000,
           arrows: true, // Hide the default arrows
           prevArrow: $('.slider-prev'), // Target the custom previous arrow element
           nextArrow: $('.slider-next'),
@@ -67,11 +68,12 @@ let $sliderEcologic = $('.slider-ecologic')
 
         $sliderTender.slick({
           // Slick slider options here
-          infinite:false,
+          infinite:true,
           arrows: true, // Hide the default arrows
           prevArrow: $('.slider-prev'), // Target the custom previous arrow element
           nextArrow: $('.slider-next'),
-
+          autoplay: true,
+          autoplaySpeed: 2000,
           mobileFirst:true,//add this one
 
           responsive: [
@@ -120,12 +122,13 @@ let $sliderEcologic = $('.slider-ecologic')
 
 
         $sliderProduct.slick({
-            infinite:false,
+            infinite:true,
             arrows: true, // Hide the default arrows
             prevArrow: $('.slider-prev'), // Target the custom previous arrow element
             nextArrow: $('.slider-next'), 
             mobileFirst:true,//add this one
-
+            autoplay: true,
+            autoplaySpeed: 2000,
             responsive: [
 
               {
@@ -196,8 +199,11 @@ let $sliderEcologic = $('.slider-ecologic')
           slidesToShow: 1,       // Show one slide at a time
           slidesToScroll: 1,
           centerPadding: '100px',   // Remove center padding
-          infinite: false,  
+          infinite: true,  
           arrows: true,
+
+          autoplay: true,
+          autoplaySpeed: 2000,
           prevArrow: $('.slider-prev'),
           nextArrow: $('.slider-next'),
 

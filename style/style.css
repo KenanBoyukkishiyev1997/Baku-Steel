@@ -572,6 +572,7 @@ a {
   z-index: 5;
 }
 .ecologic__box {
+  margin: 0 0 50px;
   width: 504px;
   height: 392px;
   background-color: rgb(159, 45, 45);
@@ -1147,6 +1148,7 @@ a {
 @media screen and (max-width: 767px) {
   .hero__info {
     display: block;
+    bottom: 300px;
   }
   .hero__info-first {
     display: block;
@@ -1159,13 +1161,24 @@ a {
   .hero__info-item .text {
     width: auto;
   }
+  .header__flex {
+    flex-direction: column;
+  }
   .hero__result {
-    display: block;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 20px;
+  }
+  .hero__result-item {
+    margin: 20px 0;
   }
   .hero__result-item .num {
     font-size: 36px;
     line-height: 40px;
     top: 0px;
+  }
+  .hero__result-item img {
+    width: 30px;
   }
   .about {
     height: auto;
@@ -1173,6 +1186,7 @@ a {
   }
   .about__banner {
     bottom: 0;
+    width: 100%;
   }
   .product__headline,
   .about__headline,
@@ -1198,6 +1212,17 @@ a {
     width: 100%;
     margin-left: 0;
   }
+  .ecologic__leftside {
+    transform: translateY(0);
+    position: relative;
+  }
+  .ecologic__leftside .ecologic__box {
+    width: 100%;
+    height: 100%;
+  }
+  .space-betwwin {
+    flex-direction: column;
+  }
   footer .footer__item {
     flex-direction: column;
     align-items: center;
@@ -1221,15 +1246,46 @@ a {
 }
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .ecologic__leftside {
+    transform: translateY(0);
+    position: relative;
+  }
+  .ecologic__leftside .ecologic__box {
+    width: 100%;
+  }
   .hero__info {
     display: block;
+    bottom: 300px;
   }
   .hero__info-first {
     display: block;
     height: auto;
   }
   .hero__info-item {
+    justify-content: center;
     margin: 0;
+  }
+  .hero__info-item .text {
+    width: auto;
+  }
+  .header__flex {
+    flex-direction: column;
+  }
+  .hero__result {
+    flex-direction: column;
+    justify-content: center;
+    bottom: 20px;
+  }
+  .hero__result-item {
+    margin: 20px 0;
+  }
+  .hero__result-item .num {
+    font-size: 36px;
+    line-height: 40px;
+    top: 0px;
+  }
+  .hero__result-item img {
+    width: 30px;
   }
   .about {
     height: auto;
@@ -1237,11 +1293,7 @@ a {
   }
   .about__banner {
     bottom: 0;
-  }
-  .product__link {
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
+    width: 100%;
   }
   .product__headline,
   .about__headline,
@@ -1257,9 +1309,7 @@ a {
   .product__headline .title,
   .about__headline .title,
   .ecologic__headline .title {
-    font-size: 30px;
-    line-height: unset;
-    margin-bottom: 20px;
+    font-size: 34px;
   }
   .product__headline .text,
   .about__headline .text,
