@@ -57,3 +57,43 @@ align-items: center;
         display: flex;
     }
 }
+
+
+/* Common styles for all devices */
+@mixin flex-colm {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 767px) {
+    
+
+    .about {
+        height: auto;
+        background-position: center center;
+
+        &__banner {
+            bottom: 0;
+            width: 100%;
+        }
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .about {
+        height: auto;
+        background-position: center center;
+
+        &__banner {
+            bottom: 0;
+            width: 100%;
+        }
+    }
+
+}
+
+/* Desktops */
+@media screen and (min-width: 1024px) {}

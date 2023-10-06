@@ -216,3 +216,105 @@ height: 982px !important;
 }
 
 }
+
+
+/* Mobile Devices */
+@media screen and (max-width: 767px) {
+    .hero__info {
+        display: block;
+        bottom: 300px;
+
+        &-first {
+            display: block;
+            height: auto;
+        }
+
+        &-item {
+            justify-content: center;
+            margin: 0;
+
+            .text {
+                width: auto;
+            }
+        }
+    }
+
+    .header__flex {
+        flex-direction: column;
+    }
+
+    .hero__result {
+        flex-direction: column;
+        justify-content: center;
+        bottom: 20px;
+
+        &-item {
+            margin: 20px 0;
+
+            .num {
+                font-size: 36px;
+                line-height: 40px;
+                top: 0px;
+            }
+
+            img {
+                width: 30px;
+            }
+        }
+    }
+
+    
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    
+    .hero__info {
+        display: block;
+        bottom: 300px;
+
+        &-first {
+            display: block;
+            height: auto;
+        }
+
+        &-item {
+            justify-content: center;
+            margin: 0;
+
+            .text {
+                width: auto;
+            }
+        }
+    }
+
+    .header__flex {
+        flex-direction: column;
+    }
+
+    .hero__result {
+        flex-direction: column;
+        justify-content: center;
+        bottom: 20px;
+
+        &-item {
+            margin: 20px 0;
+
+            .num {
+                font-size: 36px;
+                line-height: 40px;
+                top: 0px;
+            }
+
+            img {
+                width: 30px;
+            }
+        }
+    }
+
+
+}
+
+/* Desktops */
+@media screen and (min-width: 1024px) {}

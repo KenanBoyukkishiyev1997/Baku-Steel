@@ -187,3 +187,66 @@
 
 
 }
+
+
+/* Mobile Devices */
+@media screen and (max-width: 767px) {
+    .ecologic{
+
+    .ecologic__leftside{
+        transform: translateY(0);
+        position: relative;
+        .ecologic__box{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .slider-ecologic-item {
+        img{
+            height: auto ;
+    
+        }
+       }
+    .slick-slider {
+        margin: 0 ;
+        width: 100%;
+    }
+}
+
+
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .ecologic{
+
+        .ecologic__leftside{
+            transform: translateY(0);
+            position: relative;
+            .ecologic__box{
+                width: 100%;
+                height: 100%;
+            }
+
+
+        }
+   .slider-ecologic-item {
+    img{
+        height: auto ;
+
+    }
+   }
+        .slick-slider {
+            margin: 0 ;
+            width: 100%;
+        }
+    }
+
+    
+
+}
+
+/* Desktops */
+@media screen and (min-width: 1024px) {}

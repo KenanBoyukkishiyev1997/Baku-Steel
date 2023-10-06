@@ -1,63 +1,5 @@
-/* Common styles for all devices */
-@mixin flex-colm {
-    flex-direction: column;
-    align-items: center;
-}
-
 /* Mobile Devices */
 @media screen and (max-width: 767px) {
-    .hero__info {
-        display: block;
-        bottom: 300px;
-
-        &-first {
-            display: block;
-            height: auto;
-        }
-
-        &-item {
-            justify-content: center;
-            margin: 0;
-
-            .text {
-                width: auto;
-            }
-        }
-    }
-
-    .header__flex {
-        flex-direction: column;
-    }
-
-    .hero__result {
-        flex-direction: column;
-        justify-content: center;
-        bottom: 20px;
-
-        &-item {
-            margin: 20px 0;
-
-            .num {
-                font-size: 36px;
-                line-height: 40px;
-                top: 0px;
-            }
-
-            img {
-                width: 30px;
-            }
-        }
-    }
-
-    .about {
-        height: auto;
-        background-position: center center;
-
-        &__banner {
-            bottom: 0;
-            width: 100%;
-        }
-    }
 
     .product__headline,
     .about__headline,
@@ -101,35 +43,7 @@
         flex-direction: column;
     }
 
-    footer {
-        .footer__item {
-            @include flex-colm;
-
-            text-align: center;
-
-            .info {
-                display: flex;
-                @include flex-colm;
-
-            }
-
-            .contact {
-                ul {
-
-                    justify-content: center
-                }
-
-            }
-
-            .list {
-                @include flex-colm;
-
-                ul:first-child {
-                    margin: 0;
-                }
-            }
-        }
-    }
+    
 }
 
 /* Tablets */
@@ -143,60 +57,6 @@
             width: 100%;
         }
 
-    }
-
-    
-    .hero__info {
-        display: block;
-        bottom: 300px;
-
-        &-first {
-            display: block;
-            height: auto;
-        }
-
-        &-item {
-            justify-content: center;
-            margin: 0;
-
-            .text {
-                width: auto;
-            }
-        }
-    }
-
-    .header__flex {
-        flex-direction: column;
-    }
-
-    .hero__result {
-        flex-direction: column;
-        justify-content: center;
-        bottom: 20px;
-
-        &-item {
-            margin: 20px 0;
-
-            .num {
-                font-size: 36px;
-                line-height: 40px;
-                top: 0px;
-            }
-
-            img {
-                width: 30px;
-            }
-        }
-    }
-
-    .about {
-        height: auto;
-        background-position: center center;
-
-        &__banner {
-            bottom: 0;
-            width: 100%;
-        }
     }
 
     .product__headline,
@@ -226,35 +86,6 @@
         }
     }
 
-    footer {
-        .footer__item {
-            @include flex-colm;
-
-            text-align: center;
-
-            .info {
-                display: flex;
-                @include flex-colm;
-
-            }
-
-            .contact {
-                ul {
-
-                    justify-content: center
-                }
-
-            }
-
-            .list {
-                @include flex-colm;
-
-                ul:first-child {
-                    margin: 0;
-                }
-            }
-        }
-    }
 }
 
 /* Desktops */

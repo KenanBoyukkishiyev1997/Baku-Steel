@@ -196,8 +196,10 @@ let $sliderEcologic = $('.slider-ecologic')
         });
 
         $sliderEcologic.slick({
-          slidesToShow: 1,       // Show one slide at a time
+            slidesToShow: 1,       // Show one slide at a time
           slidesToScroll: 1,
+          mobileFirst:true,//add this one
+
           centerPadding: '100px',   // Remove center padding
           infinite: true,  
           arrows: true,
@@ -214,12 +216,15 @@ let $sliderEcologic = $('.slider-ecologic')
               breakpoint: 1023,
               settings: {
                 centerMode: true,     // Enable center mode
+                slidesToShow: 1,       // Show one slide at a time
 
               }
             },
             {
               breakpoint: 768,
               settings: {
+                slidesToShow: 1,       // Show one slide at a time
+
                 centerMode: false,     // Enable center mode
 
               }
