@@ -104,6 +104,10 @@ a {
   display: block;
   text-align: center;
   text-decoration: none;
+  font-family: " Bai Jamjuree", sans-serif;
+  font-weight: 500;
+  padding: 10px;
+  color: #1B1B1B;
 }
 .header__box .dropdown-content .lang-option {
   padding: 10px;
@@ -319,7 +323,7 @@ a {
 .hero .tns-item::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   left: 0;
   right: 0;
   height: 30%;
@@ -570,11 +574,27 @@ a {
   background-size: cover;
   background-image: url("../img/about/aboutMap.png");
   transition: background-image 0.3s ease;
-  /* Add a transition effect */
+}
+.product .slider-product-item-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 14px;
+  color: #FFFAFA;
+  transition: visibility 0.3s ease;
+  visibility: hidden;
 }
 .product .slider-product-item:hover {
   background-image: url("../img/product/product1.png");
-  box-shadow: -20px 8px 36px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: -7px 8px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.product .slider-product-item:hover .slider-product-item-link {
+  visibility: visible;
 }
 .product .slider-product-item:hover a {
   color: #fff;
@@ -593,7 +613,7 @@ a {
   text-decoration: none;
   color: #484848;
   display: flex;
-  text-align: center;
+  text-align: left;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -672,6 +692,9 @@ a {
   transform: translateY(50%);
   z-index: 5;
 }
+.ecologic__leftside div {
+  justify-content: space-around !important;
+}
 .ecologic__box {
   margin: 0 0 50px;
   width: 504px;
@@ -679,9 +702,13 @@ a {
   background-color: rgb(159, 45, 45);
   box-shadow: 30px 21px 26px 0px rgba(0, 0, 0, 0.02);
   padding: 62px 58px;
+  display: none;
+}
+.ecologic__box.active {
+  display: block;
 }
 .ecologic__box .title {
-  font-family: "Bai Jamjuree" sans-serif;
+  font-family: "Bai Jamjuree", sans-serif;
   font-size: 34px;
   font-weight: 600;
   margin-bottom: 25px;
@@ -699,7 +726,7 @@ a {
 .ecologic__box .btn {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-end !important;
 }
 .ecologic__box .btn-link {
   width: 122px;
@@ -715,15 +742,16 @@ a {
   line-height: 15px;
   color: rgb(159, 45, 45);
 }
-.ecologic .slider-prev,
-.ecologic .slider-next {
+.ecologic .slider-prevEcologic,
+.ecologic .slider-nextEcologic {
   cursor: pointer;
   display: flex;
   align-items: center;
   position: relative;
   z-index: 5;
   margin-top: 10px;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-bottom: 24px;
 }
 .ecologic .custom-dots {
   text-align: center;
@@ -814,7 +842,7 @@ a {
   height: 100%;
   background-color: #9F2D2D;
   width: 2px;
-  left: -20px;
+  left: -40px;
 }
 .newes__headline-link {
   font-family: "Bai Jamjuree", sans-serif;
@@ -864,7 +892,7 @@ a {
   font-weight: 600;
   line-height: 25px;
   display: flex;
-  color: #9F2D2D;
+  color: #A6A6A6;
   align-items: center;
 }
 .newes__headline .title {
@@ -923,16 +951,18 @@ a {
   margin-top: 70px;
 }
 .newes .slider-newes-item .item {
-  height: 390px;
   padding: 55px 44px;
   margin: 10px;
   background-color: rgb(245, 245, 245);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-size: cover;
   background-repeat: no-repeat;
   transition: background 0.5s ease-in;
+}
+.newes .slider-newes-item .item-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 390px;
 }
 .newes .slider-newes-item .item:hover {
   background-image: linear-gradient(180deg, #9F2D2D 19.79%, rgba(159, 45, 45, 0) 100%), url("../img/newes/newes1.png");
@@ -976,6 +1006,77 @@ a {
   font-size: 14px;
   font-weight: 600;
   line-height: 17px;
+  color: #484848;
+}
+
+/* Add Bootstrap styles here */
+/* You can include Bootstrap CSS or use your own styles */
+/* Custom styles for the modal */
+#openModal {
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.modal .modal-dialog {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  max-width: 80%;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.modal .modal-content {
+  padding: 20px;
+}
+.modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 10px;
+}
+.modal .modal-title {
+  margin: 0;
+  font-family: " Bai Jamjuree", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.modal .close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+}
+.modal .modal-body {
+  font-family: " Bai Jamjuree", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+  padding: 20px;
+}
+.modal .btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.modal .btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+.modal .btn-secondary {
+  background-color: #ccc;
+  color: #333;
 }
 
 .tender {
@@ -1002,7 +1103,7 @@ a {
   height: 100%;
   background-color: #9F2D2D;
   width: 2px;
-  left: -20px;
+  left: -40px;
 }
 .tender__headline-link {
   font-family: "Bai Jamjuree", sans-serif;
@@ -1052,7 +1153,7 @@ a {
   font-weight: 600;
   line-height: 25px;
   display: flex;
-  color: #9F2D2D;
+  color: #A6A6A6;
   align-items: center;
 }
 .tender__headline .title {
@@ -1085,8 +1186,8 @@ a {
   justify-content: flex-end;
   width: 138px;
 }
-.tender .slider-prev,
-.tender .slider-next {
+.tender .slider-prevTender,
+.tender .slider-nextTender {
   cursor: pointer;
   margin: 0 10px;
   width: 36px;
@@ -1098,13 +1199,13 @@ a {
   align-items: center;
   justify-content: center;
 }
-.tender .slider-prev {
+.tender .slider-prevTender {
   margin-left: 50px;
 }
 .tender .slick-disabled {
   background-color: rgba(242, 242, 242, 0.368627451) !important;
 }
-.tender .slider-next {
+.tender .slider-nextTender {
   margin-top: 10px;
 }
 .tender .slider-tender-item {
@@ -1114,10 +1215,10 @@ a {
   height: 173px;
   width: 265px;
   margin: 10px;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  display: flex;
 }
 .tender .slider-tender-item .item::after {
   content: "";

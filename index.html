@@ -48,41 +48,73 @@
                     </div>
 
                     <div class="hero__info-second">
-                        <img src="./img/svg/play.svg" alt="play">
+                        <img src="./img/svg/play.svg" alt="play" id="openModal">
                         <span class="text">Promo videonu izləmək üçün klikləyin</span>
+                    </div>
+
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Modal Title</h5>
+                                    <button type="button" class="close" id="closeModal">
+                                        <span>&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe id="videoIframe" width="100%" height="531"
+                                        src="https://www.youtube.com/embed/LvUT7QGpAe4" title="Baku Steel Company"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
 
 
                 </div>
 
                 <div class="hero__result">
+                    <a href="#">
 
-                    <div class="hero__result-item">
-                        <img src="./img/hero/result1.svg" alt="heroresult1">
-                        <p class="text">ŞİRKƏT HAQQINDA <span class="num">01</span></p>
+                        <div class="hero__result-item">
+                            <img src="./img/hero/result1.svg" alt="heroresult1">
+                            <p class="text">ŞİRKƏT HAQQINDA <span class="num">01</span></p>
+                        </div>
+                    </a>
 
-                    </div>
+                    <a href="#">
 
-                    <div class="hero__result-item">
-                        <img src="./img/hero/result2.svg" alt="heroresult2">
-                        <p class="text">Məhsullar <span class="num">02</span></p>
+                        <div class="hero__result-item">
 
+                            <img src="./img/hero/result2.svg" alt="heroresult2">
+                            <p class="text">Məhsullar <span class="num">02</span></p>
 
-                    </div>
+                        </div>
+                    </a>
 
-                    <div class="hero__result-item">
-                        <img src="./img/hero/result3.svg" alt="heroresult3">
-                        <p class="text">KEYFİYYƏT <span class="num">03</span></p>
+                    <a href="#">
 
+                        <div class="hero__result-item">
 
-                    </div>
+                            <img src="./img/hero/result3.svg" alt="heroresult3">
+                            <p class="text">KEYFİYYƏT <span class="num">03</span></p>
 
-                    <div class="hero__result-item">
-                        <img src="./img/hero/result4.svg" alt="heroresult4">
-                        <p class="text">DAYANIQLI İNKİŞAF <span class="num">04</span></p>
+                        </div>
+                    </a>
 
+                    <a href="#">
 
-                    </div>
+                        <div class="hero__result-item">
+
+                            <img src="./img/hero/result4.svg" alt="heroresult4">
+                            <p class="text">DAYANIQLI İNKİŞAF <span class="num">04</span></p>
+
+                        </div>
+                    </a>
+
                 </div>
             </div>
 
@@ -136,42 +168,64 @@
                         <a href="#">Armatur
                             Çeşidləri
                             <div class="line"></div>
+
+                            <span class="slider-product-item-link">Məhsullara bax <img src="./img/product/linkArrow.svg"
+                                    alt="linkArrow"></span>
                         </a>
                     </div>
+
                     <div class="slider-product-item">
                         <a href="#">Armatur
                             Çeşidləri
                             <div class="line"></div>
+                            <span class="slider-product-item-link">Məhsullara bax <img src="./img/product/linkArrow.svg"
+                                    alt="linkArrow"></span>
+
                         </a>
                     </div>
+
                     <div class="slider-product-item">
                         <a href="#">Boru
                             Çeşidləri
                             <div class="line"></div>
+                            <span class="slider-product-item-link">Məhsullara bax <img src="./img/product/linkArrow.svg"
+                                    alt="linkArrow"></span>
+
                         </a>
                     </div>
+
                     <div class="slider-product-item">
                         <a href="#">
                             Dairəvi
                             Pəstahlar
                             <div class="line"></div>
+                            <span class="slider-product-item-link">Məhsullara bax <img src="./img/product/linkArrow.svg"
+                                    alt="linkArrow"></span>
 
                         </a>
                     </div>
+
                     <div class="slider-product-item">
                         <a href="#">
                             Kvadrat
                             Çeşidləri
                             <div class="line"></div>
+                            <span class="slider-product-item-link">Məhsullara bax <img src="./img/product/linkArrow.svg"
+                                    alt="linkArrow"></span>
 
                         </a>
                     </div>
+
                     <div class="slider-product-item">
                         <a href="#">
                             Kvadrat
                             Çeşidləri
 
                             <div class="line"></div>
+
+                            <span class="slider-product-item-link">Məhsullara bax <img src="./img/product/linkArrow.svg"
+                                    alt="linkArrow"></span>
+
 
                         </a>
                     </div>
@@ -195,48 +249,80 @@
                     <span class="info">Ekoloji siyasət</span>
                     <h2 class="title">Təbiəti qoruyuruq</h2>
                 </div>
-<div class="ecologic__leftside">
-    <div class="ecologic__box">
+                <div class="ecologic__leftside">
+                    <div class="boxes">
+                        <div class="ecologic__box active " data-tab-index="0">
 
-        <h1 class="title">Dayanıqlı inkişaf</h1>
-        <p class="text">Respublikamızda bu dövrdə ekoloji siyasətə dair ilk sənəd kimi «Azərbaycan
-            Respublikasının ekoloji Konsepsiyası»nı yaratdı. Bu konsepsiyada respublikamız üçün ətraf
-            mühitin mühafizəsi baxımından üstün əhəmiyyətli olan problemlərin həlli üzrə əsas prinsiplər öz
-            əksini tapmışdı.</p>
-
-        <div class="btn">
-            <a href="#" class="btn-link">Daha ətraflı</a>
-        </div>
-    </div>
-    <div style="display: flex; align-items: center; justify-content: space-between;">
-        <div class="slider-prev" style="transform: rotate(180deg) translateY(4px);"><img
-            src="./img/svg/arrowEcologic.svg" alt="newes"></div>
-
-            
-        <div class=" slider-next"><img src="./img/svg/arrowEcologic.svg" alt="newes"></div>
-        
-    </div>
-    <div class="custom-dots">
-        <span class="custom-dot"></span>
-        <span class="custom-dot"></span>
-        <span class="custom-dot"></span>
-      </div>
+                            <h1 class="title">Dayanıqlı inkişaf 1</h1>
+                            <p class="text">Respublikamızda bu dövrdə ekoloji siyasətə dair ilk sənəd kimi «Azərbaycan
+                                Respublikasının ekoloji Konsepsiyası»nı yaratdı. Bu konsepsiyada respublikamız üçün ətraf
+                                mühitin mühafizəsi baxımından üstün əhəmiyyətli olan problemlərin həlli üzrə əsas prinsiplər
+                                öz
+                                əksini tapmışdı.</p>
     
-</div>
-              
-             
+                            <div class="btn">
+                                <a href="#" class="btn-link">Daha ətraflı</a>
+                            </div>
+                        </div>
+    
+                        <div class="ecologic__box " data-tab-index="1">
+    
+                            <h1 class="title">Dayanıqlı inkişaf2</h1>
+                            <p class="text">Respublikamızda bu dövrdə ekoloji siyasətə dair ilk sənəd kimi «Azərbaycan
+                                Respublikasının ekoloji Konsepsiyası»nı yaratdı. Bu konsepsiyada respublikamız üçün ətraf
+                                mühitin mühafizəsi baxımından üstün əhəmiyyətli olan problemlərin həlli üzrə əsas prinsiplər
+                                öz
+                                əksini tapmışdı.</p>
+    
+                            <div class="btn">
+                                <a href="#" class="btn-link">Daha ətraflı</a>
+                            </div>
+                        </div>
+    
+                        <div class="ecologic__box " data-tab-index="2">
+    
+                            <h1 class="title">Dayanıqlı inkişaf3</h1>
+                            <p class="text">Respublikamızda bu dövrdə ekoloji siyasətə dair ilk sənəd kimi «Azərbaycan
+                                Respublikasının ekoloji Konsepsiyası»nı yaratdı. Bu konsepsiyada respublikamız üçün ətraf
+                                mühitin mühafizəsi baxımından üstün əhəmiyyətli olan problemlərin həlli üzrə əsas prinsiplər
+                                öz
+                                əksini tapmışdı.</p>
+    
+                            <div class="btn">
+                                <a href="#" class="btn-link">Daha ətraflı</a>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <div class="slider-prevEcologic" style="transform: rotate(180deg) translateY(4px);"><img
+                                src="./img/svg/arrowEcologic.svg" alt="newes"></div>
+
+                        <div class=" slider-nextEcologic"><img src="./img/svg/arrowEcologic.svg" alt="newes"></div>
+
+                    </div>
+                    <div class="custom-dots">
+                        <span class="custom-dot"></span>
+                        <span class="custom-dot"></span>
+                        <span class="custom-dot"></span>
+                    </div>
+
+                </div>
+
+
             </div>
             <div class="slider-ecologic">
 
-                <div class="slider-ecologic-item">
+                <div class="slider-ecologic-item" data-tab-index="0">
                     <img src="./img/hero/hero.png" alt="">
                 </div>
 
-                <div class="slider-ecologic-item">
+                <div class="slider-ecologic-item" data-tab-index="1">
                     <img src="./img/hero/hero.png" alt="">
                 </div>
 
-                <div class="slider-ecologic-item">
+                <div class="slider-ecologic-item" data-tab-index="2">
                     <img src="./img/hero/hero.png" alt="">
                 </div>
             </div>
@@ -251,9 +337,9 @@
                     <div class="space-betwwin">
 
                         <ul class="newes__headline-list">
-                            <li class=" newes__headline-item active">Xəbərlər</li>
-                            <li class="newes__headline-item">KİV-də BİZ</li>
-                            <li class="newes__headline-item">Arxiv</li>
+                            <li class=" newes__headline-item tab-item-newes " data-slide-newes="0">Xəbərlər</li>
+                            <li class="newes__headline-item tab-item-newes" data-slide-newes="1">KİV-də BİZ</li>
+                            <li class="newes__headline-item tab-item-newes" data-slide-newes="2">Arxiv</li>
                         </ul>
                         <div class="space-betwwin">
                             <a class="newes__headline-link" href="#">Hamısına bax</a>
@@ -272,46 +358,62 @@
 
                 <div class="slider-newes-item">
 
-                    <div class="item">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                        <div class="item__bottom">
-                            <h1 class="item__bottom-title">4</h1>
-                            <span class="item__bottom-text">Avgust <br> 2014</span>
+                    <a href="#" class="item" data-slide-newes="0">
+                        <div class="item-flex">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </p>
+                            <div class="item__bottom">
+                                <h1 class="item__bottom-title">4</h1>
+                                <span class="item__bottom-text">Avgust <br> 2014</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                        <div class="item__bottom">
-                            <h1 class="item__bottom-title">4</h1>
-                            <span class="item__bottom-text">Avgust <br> 2014</span>
+                    </a>
+
+                    <a href="#" class="item" data-slide-newes="1">
+                        <div class="item-flex" >
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </p>
+                            <div class="item__bottom">
+                                <h1 class="item__bottom-title">4</h1>
+                                <span class="item__bottom-text">Avgust <br> 2014</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                        <div class="item__bottom">
-                            <h1 class="item__bottom-title">4</h1>
-                            <span class="item__bottom-text">Avgust <br> 2014</span>
+                    </a>
+
+                    <a href="#"  class="item" data-slide-newes="2">
+                        <div  class="item-flex">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </p>
+                            <div class="item__bottom">
+                                <h1 class="item__bottom-title">4</h1>
+                                <span class="item__bottom-text">Avgust <br> 2014</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                        <div class="item__bottom">
-                            <h1 class="item__bottom-title">4</h1>
-                            <span class="item__bottom-text">Avgust <br> 2014</span>
+                    </a>
+
+                    <a href="#" class="item" data-slide-newes="0">
+                        <div  class="item-flex">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </p>
+                            <div class="item__bottom">
+                                <h1 class="item__bottom-title">4</h1>
+                                <span class="item__bottom-text">Avgust <br> 2014</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+
                 </div>
 
 
@@ -326,19 +428,19 @@
 
                 <div class="tender__headline">
                     <span class="info">Media</span>
-                    <h2 class="title">Yeniliklərimiz</h2>
+                    <h2 class="title">Tenderlər</h2>
                     <div class="space-betwwin">
 
                         <ul class="tender__headline-list">
-                            <li class=" tender__headline-item active">cari</li>
-                            <li class="tender__headline-item">Arxiv</li>
+                            <li class=" tender__headline-item tab-item  "  data-slide-index="0">Cari</li>
+                            <li class="tender__headline-item tab-item "  data-slide-index="1">Arxiv</li>
                         </ul>
                         <div class="space-betwwin">
                             <a class="tender__headline-link" href="#">Hamısına bax</a>
 
                             <!-- Custom arrow elements -->
-                            <div class="slider-prev"><img src="./img/newes/arrow.svg" alt="newes"></div>
-                            <div class="slider-next" style="transform: rotate(180deg) translateY(4px);"><img
+                            <div class="slider-prevTender"><img src="./img/newes/arrow.svg" alt="newes"></div>
+                            <div class="slider-nextTender" style="transform: rotate(180deg) translateY(4px);"><img
                                     src="./img/newes/arrow.svg" alt="newes"></div>
                         </div>
 
@@ -349,34 +451,43 @@
                 </div>
 
                 <div class="slider-tender-item">
+                    <div class="item"  data-slide-index="1">
+                        <a href="#">
 
-                    <div class="item">
-                        <span class="time "> 1 Avqust</span>
+                            <span class="time "> 1 Avqust</span>
 
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                        <div class="item__bottom">
-                            <h1 class="item__bottom-title">Bitmə tarixi: 20 Avqust</h1>
-                            <a href="#" class="item__bottom-text">Ətraflı</a>
-                        </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </p>
+                            <div class="item__bottom">
+                                <h1 class="item__bottom-title">Bitmə tarixi: 20 Avqust</h1>
+                                <a href="#" class="item__bottom-text">Ətraflı</a>
+                            </div>
+                        </a>
+
                     </div>
 
-                    <div class="item">
-                        <span class="time "> 1 Avqust</span>
 
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                        <div class="item__bottom">
-                            <h1 class="item__bottom-title">Bitmə tarixi: 20 Avqust</h1>
-                            <a href="#" class="item__bottom-text">Ətraflı</a>
-                        </div>
+                    <div class="item"  data-slide-index="0">
+                        <a href="#">
+                            <span class="time "> 1 Avqust</span>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </p>
+                            <div class="item__bottom">
+                                <h1 class="item__bottom-title">Bitmə tarixi: 20 Avqust</h1>
+                                <a href="#" class="item__bottom-text">Ətraflı</a>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="item">
+                    <div class="item"  data-slide-index="1">
+                        <a href="#">
                         <span class="time "> 1 Avqust</span>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -386,8 +497,12 @@
                             <h1 class="item__bottom-title">Bitmə tarixi: 20 Avqust</h1>
                             <a href="#" class="item__bottom-text">Ətraflı</a>
                         </div>
+                    </a>
                     </div>
-                    <div class="item">
+
+
+                    <div class="item"  data-slide-index="1">
+                        <a href="#">
                         <span class="time "> 1 Avqust</span>
 
                         <p>
@@ -398,8 +513,12 @@
                             <h1 class="item__bottom-title">Bitmə tarixi: 20 Avqust</h1>
                             <a href="#" class="item__bottom-text">Ətraflı</a>
                         </div>
+                    </a>
                     </div>
-                    <div class="item">
+
+
+                    <div class="item"  data-slide-index="1">
+                        <a href="#">
                         <span class="time "> 1 Avqust</span>
 
                         <p>
@@ -410,8 +529,11 @@
                             <h1 class="item__bottom-title">Bitmə tarixi: 20 Avqust</h1>
                             <a href="#" class="item__bottom-text">Ətraflı</a>
                         </div>
+                    </a>
                     </div>
-                    <div class="item">
+
+                    <div class="item"  data-slide-index="0">
+                        <a href="#">
                         <span class="time "> 1 Avqust</span>
 
                         <p>
@@ -422,12 +544,9 @@
                             <h1 class="item__bottom-title">Bitmə tarixi: 20 Avqust</h1>
                             <a href="#" class="item__bottom-text">Ətraflı</a>
                         </div>
+                    </a>
                     </div>
                 </div>
-
-
-
-
             </div>
         </section>
         <div id="footer"></div>

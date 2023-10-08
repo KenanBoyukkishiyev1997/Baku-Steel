@@ -72,7 +72,9 @@
         top: 50%;
         transform: translateY(50%);
         z-index: 5;
-
+div{
+    justify-content: space-around !important;
+}
     }
 
     &__box {
@@ -83,9 +85,13 @@
         background-color: rgba(159, 45, 45, 1);
         box-shadow: 30px 21px 26px 0px rgba(0, 0, 0, 0.02);
         padding: 62px 58px;
+display: none;
+        &.active{
+            display: block;
+        }
 
         .title {
-            font-family: 'Bai Jamjuree' sans-serif;
+            font-family: 'Bai Jamjuree', sans-serif;
             font-size: 34px;
             font-weight: 600;
             margin-bottom: 25px;
@@ -107,7 +113,7 @@
 
             display: flex;
             align-items: center;
-            justify-content: flex-end;
+            justify-content: flex-end !important;
 
             &-link {
                 width: 122px;
@@ -129,8 +135,8 @@
     }
 
 
-    .slider-prev,
-    .slider-next {
+    .slider-prevEcologic,
+    .slider-nextEcologic {
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -138,7 +144,8 @@
         z-index: 5;
 
         margin-top: 10px;
-        justify-content: space-between;
+        justify-content: space-around;
+        margin-bottom: 24px;
     }
 
     .slick-disabled {}

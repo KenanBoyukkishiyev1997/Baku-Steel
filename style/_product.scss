@@ -102,14 +102,29 @@
         background-image: url('../img/about/aboutMap.png');
 
         transition: background-image 0.3s ease;
-        /* Add a transition effect */
-        // &.slick-active:last-child{
-        //     background-color: red !important;
-        // }
+       &-link{
+        font-family: 'Montserrat' , sans-serif;
+font-size: 10px;
+font-weight: 400;
+line-height: 12px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+margin-top: 14px;
+color: #FFFAFA;
+transition: visibility 0.3s ease;
+
+visibility: hidden;
+       }
         &:hover {
             background-image: url('../img/product/product1.png');
-            box-shadow: -20px 8px 36px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: -7px 8px 8px 0px rgba(0, 0, 0, 0.2);
+            
+            .slider-product-item-link{
 
+                visibility: visible;
+            }
             a {
                 color: #fff;
 
@@ -130,7 +145,7 @@
             text-decoration: none;
             color: #484848;
             display: flex;
-            text-align: center;
+            text-align: left;
             justify-content: center;
             align-items: center;
             margin: 0 auto;
