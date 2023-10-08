@@ -323,7 +323,7 @@ a {
 .hero .tns-item::after {
   content: "";
   position: absolute;
-  bottom: -10px;
+  bottom: -20px;
   left: 0;
   right: 0;
   height: 30%;
