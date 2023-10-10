@@ -5,14 +5,16 @@
     &-slider {
         position: relative;
 
-     &-item{
+        &-item {
 
-        background-repeat: no-repeat;
-        background-size: cover;
-height: 982px !important;
-     }
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 982px !important;
+        }
 
     }
+
+
 
 
     &__info {
@@ -85,7 +87,7 @@ height: 982px !important;
             display: flex;
             align-items: center;
             position: relative;
-            margin-right: 100px;
+            margin-right: 90px;
 
             .text {
                 margin-left: 5px;
@@ -95,7 +97,7 @@ height: 982px !important;
                 line-height: 20px;
                 color: #1B1B1B;
 
-           
+
             }
 
             .num {
@@ -111,118 +113,128 @@ height: 982px !important;
                 left: 53px;
                 top: -20px;
                 width: 70px;
-              }
+            }
 
-              
 
-        
+
+
         }
     }
 
-.tns-controls button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: none;
-
-    &:hover {
-        background-color: #555;
-
-    }
-
-    &[disabled] {
-        background-color: #999;
-        cursor: not-allowed;
-    }
-
-}
-
-.tns-nav {
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    bottom: 0;
-    padding: 30px 0;
-
-    button {
-        background-color: #ACACAC;
-        width: 10px;
-        height: 10px;
+    .tns-controls button {
+        background-color: #333;
+        color: #fff;
         border: none;
-        border-radius: 50%;
-        margin: 0 5px;
-        /* Adjust the spacing between dots */
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: none;
 
-        &.tns-nav-active {
-            background-color: #9F2D2DE5;
+        &:hover {
+            background-color: #555;
+
+        }
+
+        &[disabled] {
+            background-color: #999;
+            cursor: not-allowed;
+        }
+
+    }
+
+    .tns-nav {
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        bottom: 0;
+        padding: 30px 0;
+
+        button {
+            background-color: #ACACAC;
+            width: 10px;
+            height: 10px;
+            border: none;
+            border-radius: 50%;
+            margin: 0 5px;
+            /* Adjust the spacing between dots */
+
+            &.tns-nav-active {
+                background-color: #9F2D2DE5;
+            }
         }
     }
-}
 
-.tns-item {
-    height: auto;
-    position: relative;
-    display: inline-block;
-
-    /* Ensures container size is based on image size */
-    img {
-        width: 100%;
-        display: block;
+    .tns-item {
         height: auto;
-        z-index: 2;
+        position: relative;
+        display: inline-block;
+
+        /* Ensures container size is based on image size */
+        img {
+            width: 100%;
+            display: block;
+            height: auto;
+            z-index: 2;
+        }
+
+
+
+
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 20%;
+            background: linear-gradient(rgba(239, 236, 236, 0.6), rgba(255, 255, 255, 0.6));
+            z-index: 1;
+            filter: blur(10px);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            right: 0;
+            height: 30%;
+            /* Adjust the height of the gradient overlay at the bottom */
+            background: linear-gradient(rgba(239, 236, 236, 0.6), rgba(255, 255, 255, 0.6));
+            /* Adjust the gradient colors and transparency as needed */
+            z-index: 1;
+            /* Place the gradient layer above the image */
+            filter: blur(10px);
+            /* Add a blur effect (adjust the value as needed) */
+
+        }
+
+
     }
-
-
-
-
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 20%;
-        /* Adjust the height of the gradient overlay at the top */
-        background: linear-gradient(rgba(239, 236, 236, 0.6), rgba(255, 255, 255, 0.6));
-        /* Adjust the gradient colors and transparency as needed */
-        z-index: 1;
-        /* Place the gradient layer above the image */
-        filter: blur(10px);
-        /* Add a blur effect (adjust the value as needed) */
-
-    }
-
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: -20px;
-        left: 0;
-        right: 0;
-        height: 30%;
-        /* Adjust the height of the gradient overlay at the bottom */
-        background: linear-gradient(rgba(239, 236, 236, 0.6), rgba(255, 255, 255, 0.6));
-        /* Adjust the gradient colors and transparency as needed */
-        z-index: 1;
-        /* Place the gradient layer above the image */
-        filter: blur(10px);
-        /* Add a blur effect (adjust the value as needed) */
-
-    }
-
 
 }
 
+.barMob__itemHideMob {
+    display: none;
 }
-
 
 /* Mobile Devices */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1249px) {
+    .header{
+        .contanier{
+            width: 90%;
+        }
+    }
+    .tns-nav{
+        display: none;
+    }
     .hero__info {
         display: block;
-        bottom: 300px;
+
+        bottom: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
 
         &-first {
             display: block;
@@ -239,15 +251,28 @@ height: 982px !important;
         }
     }
 
-    .header__flex {
-        flex-direction: column;
+    .barMob__itemHideMob {
+        display: block;
+    }
+
+    .header__box-input {
+        width: 100%;
+    }
+
+    .header__box .dropdown-content {
+        background-color: transparent;
+    }
+
+    .respons-desc {
+        display: none;
     }
 
     .hero__result {
-        flex-direction: column;
-        justify-content: center;
-        bottom: 20px;
-
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        width: 90%;
+margin: 10%;
         &-item {
             margin: 20px 0;
 
@@ -262,59 +287,10 @@ height: 982px !important;
             }
         }
     }
-
-    
 }
 
 /* Tablets */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-
-    
-    .hero__info {
-        display: block;
-        bottom: 300px;
-
-        &-first {
-            display: block;
-            height: auto;
-        }
-
-        &-item {
-            justify-content: center;
-            margin: 0;
-
-            .text {
-                width: auto;
-            }
-        }
-    }
-
-    .header__flex {
-        flex-direction: column;
-    }
-
-    .hero__result {
-        flex-direction: column;
-        justify-content: center;
-        bottom: 20px;
-
-        &-item {
-            margin: 20px 0;
-
-            .num {
-                font-size: 36px;
-                line-height: 40px;
-                top: 0px;
-            }
-
-            img {
-                width: 30px;
-            }
-        }
-    }
-
-
-}
+@media screen and (max-width: 1260px) {}
 
 /* Desktops */
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1261px) {}

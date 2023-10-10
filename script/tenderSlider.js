@@ -19,6 +19,8 @@ export function tenderSlider() {
                 {
                     breakpoint: 1200,
                     settings: {
+                        infinite: false,
+
                         slidesToShow: 5,
                     }
                 },
@@ -26,12 +28,16 @@ export function tenderSlider() {
                 {
                     breakpoint: 1000,
                     settings: {
-                        slidesToShow: 1,
+                        infinite: false,
+
+                        slidesToShow: 2,
                     }
                 },
                 {
                     breakpoint: 900,
                     settings: {
+                        infinite: false,
+
                         slidesToShow: 2,
                     }
                 },
@@ -77,11 +83,19 @@ export function tenderSlider() {
             // Hide all slides
             $('.slider-tender-item .item').removeClass('active').hide();
 
-            // Show the corresponding slide
-            $('.item[data-slide-index="' + slideIndex + '"]').addClass('active').show();
-
+            if (slideIndex === 2) {
+                // If the "All" tab is clicked, show all items
+                $('.slider-tender-item  .item').addClass('active').show();
+            } else {
+                // Show the corresponding slide for other tabs
+                $('.item[data-slide-index="' + slideIndex + '"]').addClass('active').show();
+            }
             // Go to the corresponding slide in the slider
             // $sliderTender.slick('slickGoTo', slideIndex);
         });
     })
+
+
+    
 }
+

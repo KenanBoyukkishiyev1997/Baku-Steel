@@ -17,21 +17,18 @@ export function barToggle() {
             prevArrow: $('.slider-prev'), // Target the custom previous arrow element
             nextArrow: $('.slider-next'),
             responsive: [
-
                 {
                     breakpoint: 1200,
                     settings: {
                         slidesToShow: 3,
                     }
                 },
-
                 {
                     breakpoint: 900,
                     settings: {
-                        slidesToShow: 1,
+                        slidesToShow: 2,
                     }
                 },
-
             ],  // Target the custom next arrow element
         });
 
@@ -76,9 +73,13 @@ export function barToggle() {
 
             $('.slider-newes-item .item').removeClass('active').hide();
 
-            $('.item[data-slide-newes="' + slideIndex + '"]').addClass('active').show();
-            $slider.slick('slickPause');
-
+            if (slideIndex === 3) {
+                // If the "All" tab is clicked, show all items
+                $('.slider-newes-item .item').addClass('active').show();
+            } else {
+                // Show the corresponding slide for other tabs
+                $('.item[data-slide-newes="' + slideIndex + '"]').addClass('active').show();
+            }
             // Go to the corresponding slide in the slider
             //  $slider.slick('slickGoTo', slideIndex);
 

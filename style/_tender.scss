@@ -224,3 +224,31 @@ color: rgba(72, 72, 72, 1);
     }
 
 }
+
+
+@media screen and (max-width: 1250px) {
+    .tender {
+
+       &__headline-link{
+        margin-top: 50px;
+       }
+        .slider-prevTender,
+        .slider-nextTender {
+            right: 50%;
+            bottom: 0;
+            margin-top: 50px;
+            transform: translateX(-50%);
+        }
+    
+        .slider-prevTender {margin-left: 0px;}
+        .slick-disabled{
+            background-color: #F2F2F25E !important;
+        }
+    
+        .slider-nextTender {
+            bottom: -3px;
+
+            right: 40%;
+        }
+    }
+}
