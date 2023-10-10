@@ -6,8 +6,11 @@ export function scrollpage(){
         navContainer: false,
         items: 1,
         speed: 400,
+        mouseDrag: true,
 
-        swipeAngle: false,
+       autoplay: true,
+       autoplayTimeout: 3500,
+       
     });
 
     $(document).ready(function(){

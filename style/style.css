@@ -275,6 +275,9 @@ a {
   top: -20px;
   width: 70px;
 }
+.hero .tns-outer button {
+  display: none;
+}
 .hero .tns-controls button {
   background-color: #333;
   color: #fff;
@@ -296,8 +299,10 @@ a {
   left: 50%;
   bottom: 0;
   padding: 30px 0;
+  display: flex !important;
 }
 .hero .tns-nav button {
+  display: flex !important;
   background-color: #ACACAC;
   width: 10px;
   height: 10px;

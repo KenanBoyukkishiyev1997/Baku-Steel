@@ -120,7 +120,11 @@
 
         }
     }
-
+    .tns-outer{
+        button{
+            display: none;
+        }
+    }
     .tns-controls button {
         background-color: #333;
         color: #fff;
@@ -147,8 +151,10 @@
         left: 50%;
         bottom: 0;
         padding: 30px 0;
+        display: flex !important;
 
         button {
+            display: flex !important;
             background-color: #ACACAC;
             width: 10px;
             height: 10px;
@@ -213,6 +219,7 @@
     }
 
 }
+
 
 .barMob__itemHideMob {
     display: none;
