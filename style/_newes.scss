@@ -231,8 +231,30 @@
 }
 
 @media screen and (max-width: 1250px) {
-    .newes {
 
+   
+    .newes {
+        .newes__headline-list{
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            li{
+                margin-bottom: 30px;
+            }
+        }
+         .slider-newes-item {
+            .item{
+                padding: 20px;
+                p{
+                    font-size: 12px;
+                }
+            }
+
+            .item__bottom-title{
+                font-size: 30px;
+            }
+         }
        &__headline-link{
         margin-top: 50px;
        }

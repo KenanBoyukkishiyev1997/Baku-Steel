@@ -152,7 +152,7 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0) 41.19%, rgba(255, 255
         bottom: 0;
         padding: 30px 0;
         display: flex !important;
-
+        transform: translateX(-50%);
         button {
             display: flex !important;
             background-color: #ACACAC;
