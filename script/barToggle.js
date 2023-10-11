@@ -24,7 +24,7 @@ export function barToggle() {
                     }
                 },
                 {
-                    breakpoint: 900,
+                    breakpoint: 300,
                     settings: {
                         slidesToShow: 2,
                     }

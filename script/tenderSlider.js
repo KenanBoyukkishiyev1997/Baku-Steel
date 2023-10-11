@@ -34,7 +34,7 @@ export function tenderSlider() {
                     }
                 },
                 {
-                    breakpoint: 900,
+                    breakpoint: 300,
                     settings: {
                         infinite: false,
 

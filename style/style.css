@@ -184,6 +184,7 @@ a {
 .hero {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 41.19%, rgba(255, 255, 255, 0.95) 94.79%);
   position: relative;
+  height: 100vh;
 }
 .hero-slider {
   position: relative;
