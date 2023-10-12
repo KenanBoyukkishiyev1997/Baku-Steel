@@ -1,6 +1,6 @@
 .newes {
     height: 833px;
-    padding: 60px;
+    padding: 60px 10px;
     position: relative;
     background-color: rgba(242, 242, 242, 0.37);
 
@@ -260,6 +260,7 @@
        }
         .slider-prev,
         .slider-next {
+            position: relative;
             right: 50%;
             bottom: 0;
             margin-top: 50px;
@@ -272,7 +273,7 @@
         }
     
         .slider-next {
-            bottom: -3px;
+            bottom: -4px;
 
             right: 40%;
         }

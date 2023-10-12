@@ -39,9 +39,9 @@ let $sliderProduct = $('.slider-product')
                 }
               },
               {
-                breakpoint: 1000,
+                breakpoint: 300,
                 settings: {
-                  slidesToShow: 1,
+                  slidesToShow: 2,
                 }
               },
              

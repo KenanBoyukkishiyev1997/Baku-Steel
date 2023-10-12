@@ -169,7 +169,13 @@ visibility: hidden;
 
 @media screen and (max-width: 1250px) {
     .product {
-
+         .slider-product-item{
+            a{
+                font-size: 20px;
+                width: auto;
+                line-height: 40px;
+            }
+         } 
         &__link{
             width: auto;
     margin: 20px 0;
@@ -189,7 +195,7 @@ visibility: hidden;
         }
     
         .slider-next {
-            bottom: -3px;
+            bottom: -4px;
 
             right: 40%;
         }

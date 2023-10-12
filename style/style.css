@@ -475,7 +475,7 @@ a {
   .about {
     height: auto;
     background-position: center center;
-    background-size: 100% 100%;
+    background-size: contain;
     padding: 10px;
   }
   .about__banner {
@@ -627,6 +627,11 @@ a {
 }
 
 @media screen and (max-width: 1250px) {
+  .product .slider-product-item a {
+    font-size: 20px;
+    width: auto;
+    line-height: 40px;
+  }
   .product__link {
     width: auto;
     margin: 20px 0;
@@ -646,7 +651,7 @@ a {
     background-color: rgba(242, 242, 242, 0.368627451) !important;
   }
   .product .slider-next {
-    bottom: -3px;
+    bottom: -4px;
     right: 40%;
   }
 }
@@ -833,7 +838,7 @@ a {
 /* Desktops */
 .newes {
   height: 833px;
-  padding: 60px;
+  padding: 60px 10px;
   position: relative;
   background-color: rgba(242, 242, 242, 0.37);
 }
@@ -1045,6 +1050,7 @@ a {
   }
   .newes .slider-prev,
   .newes .slider-next {
+    position: relative;
     right: 50%;
     bottom: 0;
     margin-top: 50px;
@@ -1057,7 +1063,7 @@ a {
     background-color: rgba(242, 242, 242, 0.368627451) !important;
   }
   .newes .slider-next {
-    bottom: -3px;
+    bottom: -4px;
     right: 40%;
   }
 }
@@ -1133,7 +1139,7 @@ a {
 
 .tender {
   height: 833px;
-  padding: 60px;
+  padding: 60px 10px;
   position: relative;
   background-color: rgba(242, 242, 242, 0.37);
 }
