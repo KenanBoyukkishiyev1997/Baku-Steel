@@ -1,0 +1,100 @@
+.sidebarInfo {
+    margin-top: 60px;
+    margin-bottom: 100px;
+
+    &__flex {
+        display: flex;
+    }
+
+    .sidebar {
+        margin-right: 50px;
+
+        ul {
+            list-style: none;
+            display: block;
+            width: 330px;
+
+            li {
+                &.active {
+                    background-color: #A84141;
+
+                        color: #fff;
+                }
+
+                height: 56px;
+                padding: 10px 99px 10px 10px;
+                border-bottom: 1px solid #A84141;
+                font-family: 'Bai Jamjuree', sans-serif;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 36px;
+                color: #A84141;
+                   
+            }
+        }
+    }
+
+    .info {
+        &__title {
+            font-family: 'Bai Jamjuree', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 36px;
+            margin-bottom: 20px;
+        }
+
+        &__subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 25px;
+            letter-spacing: 0.005em;
+            color: #323332;
+
+
+        }
+
+        &__text{
+            font-family: 'Montserrat' , sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 25px;
+            letter-spacing: 0.005em;
+            color: #5F605F;
+            margin-bottom: 20px;
+        }
+        &List {
+            margin-bottom: 20px;
+            margin-left: 20px;
+            li {
+                font-family: 'Montserrat' , sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 25px;
+                letter-spacing: 0.005em;
+                color: #5F605F;
+
+               
+            }
+
+            .info__listSubtitle{
+                margin-left: 20px;
+                list-style: disc;
+            }
+        }
+    }
+
+    .tab-link{
+        cursor: pointer;
+    }
+
+    .info, .members {
+        display: none;
+    }
+    
+    /* Display the active section */
+    .info.active, .members.active {
+        display: block;
+    }
+    
+}

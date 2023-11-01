@@ -1,0 +1,38 @@
+.members {
+    position: relative;
+display: none;
+    &__gird {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 21px;
+    }
+
+    &__box {
+        padding: 20px 20px 50px 20px;
+        background-color: #F6F6F6;
+        height: 386px;
+        text-align: center;
+
+        .title {
+            font-family: ' Bai Jamjuree';
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 36px;
+color: #323332;
+        }
+
+        img {
+            width: 222px;
+            height: 238px;
+            margin-bottom: 21px;
+        }
+
+        .position {
+            font-family: 'Bai Jamjuree';
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+color: #323332;
+        }
+    }
+}

@@ -1,7 +1,9 @@
 
 
 export function scrollpage(){
-    const slider = tns({
+  document.addEventListener("DOMContentLoaded", function () {
+ 
+     tns({
         container: '.hero-slider',
         navContainer: false,
         items: 1,
@@ -14,13 +16,11 @@ export function scrollpage(){
     });
 
     $(document).ready(function(){
-
+      
 let $sliderProduct = $('.slider-product')
 
   let $customPrevArrow = $('.slider-prev');
   let $customNextArrow = $('.slider-next');
-
-
 
         $sliderProduct.slick({
             infinite:true,
@@ -62,7 +62,6 @@ let $sliderProduct = $('.slider-product')
             }
         })
       
-      
         // Update arrow states on beforeChange event
         $sliderProduct.on('beforeChange', function(event, slick, currentSlide, nextSlide){
           if (nextSlide === 0) {
@@ -93,6 +92,8 @@ let $sliderProduct = $('.slider-product')
           }
 
         });
+
       });
+  })
     
 }

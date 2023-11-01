@@ -1,0 +1,66 @@
+.certificat {
+    position: relative;
+    display: none;
+
+
+    &.active {
+        display: block;
+    }
+
+    &__box-drop {
+        border-bottom: 1px solid grey;
+
+    }
+
+    &__box {
+        border-bottom: 1px solid grey;
+
+        &-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        &-pdf {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 25px;
+            }
+
+            span {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;
+            }
+        }
+
+        &-link {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #9F2D2D;
+text-decoration: underline;
+        }
+
+        &-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 31px;
+            letter-spacing: 0.005em;
+        }
+    }
+
+    &__title {
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+        padding-bottom: 20px;
+    }
+}

@@ -138,8 +138,11 @@
         justify-content: center;
     }
 
-    .slider-prevTender {margin-left: 50px;}
-    .slick-disabled{
+    .slider-prevTender {
+        margin-left: 50px;
+    }
+
+    .slick-disabled {
         background-color: #F2F2F25E !important;
     }
 
@@ -160,8 +163,8 @@
             position: relative;
             display: flex;
 
-          
-            &::after{
+
+            &::after {
                 content: '';
                 width: 2px;
                 height: 100%;
@@ -169,14 +172,15 @@
                 position: absolute;
                 right: 0;
             }
-           
-.time{
-    font-family: 'Bai Jamjuree' , sans-serif;
-font-size: 12px;
-font-weight: 500;
-line-height: 15px;
-color: rgba(155, 155, 155, 1);
-}
+
+            .time {
+                font-family: 'Bai Jamjuree', sans-serif;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 15px;
+                color: rgba(155, 155, 155, 1);
+            }
+
             &__bottom {
                 width: 95%;
                 display: flex;
@@ -188,20 +192,20 @@ color: rgba(155, 155, 155, 1);
                     // height: Hug (25px)
                     padding: 5px;
                     border-radius: 8px;
-background-color: #F0E6E5;
-                    font-family: 'Bai Jamjuree' , sans-serif;
-font-size: 12px;
-font-weight: 500;
-line-height: 15px;
-letter-spacing: 0em;
-text-align: left;
+                    background-color: #F0E6E5;
+                    font-family: 'Bai Jamjuree', sans-serif;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 15px;
+                    letter-spacing: 0em;
+                    text-align: left;
 
                     color: rgba(159, 45, 45, 0.87);
                 }
 
                 &-text {
 
-                    font-family: 'Bai Jamjuree' ,sans-serif;
+                    font-family: 'Bai Jamjuree', sans-serif;
                     font-size: 12px;
                     font-weight: 400;
                     line-height: 15px;
@@ -218,38 +222,179 @@ text-align: left;
                 font-size: 14px;
                 font-weight: 600;
                 line-height: 17px;
-color: rgba(72, 72, 72, 1);
+                color: rgba(72, 72, 72, 1);
             }
         }
     }
 
 }
 
+.tenderPage {
+
+
+    &__title {
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+    }
+
+    &__date {
+        span {
+            font-family: 'Bai Jamjuree', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 35px;
+            color: #909090;
+        }
+    }
+
+    &__text {
+        margin-bottom: 20px;
+
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: 0.005em;
+        color: #5F605F;
+
+        a {
+            display: inline;
+            font-weight: 600;
+            color: #9F2D2D;
+        }
+    }
+
+    &__list{
+        list-style: auto;
+        margin-left: 20px;
+        li{
+            font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: 0.005em;
+        color: #5F605F;
+        }
+    }
+
+
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+
+
+        .item {
+            height: 173px;
+            width: auto;
+            margin: 10px 10px 67px;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            display: flex;
+
+            a {
+                padding-right: 20px;
+            }
+
+            &::after {
+                content: '';
+                width: 1px;
+                height: 100%;
+                background-color: rgba(224, 224, 224, 1);
+                position: absolute;
+                right: 0;
+            }
+
+            .time {
+                font-family: 'Bai Jamjuree', sans-serif;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 15px;
+                color: rgba(155, 155, 155, 1);
+                margin-bottom: 24px;
+            }
+
+            &__bottom {
+                width: 95%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-right: 20px;
+
+                &-title {
+                    // width: Hug (140px)
+                    // height: Hug (25px)
+                    padding: 5px;
+                    border-radius: 8px;
+                    background-color: #F0E6E5;
+                    font-family: 'Bai Jamjuree', sans-serif;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 15px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                    color: rgba(159, 45, 45, 0.87);
+                }
+
+                &-text {
+
+                    font-family: 'Bai Jamjuree', sans-serif;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 15px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    text-decoration: none;
+                    color: rgba(103, 103, 103, 1);
+                }
+            }
+
+            p {
+                width: 95%;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 17px;
+                color: rgba(72, 72, 72, 1);
+                margin-top: 20px;
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 1250px) {
     .tender {
 
-            .slider-tender-item {
-                .item__bottom{
-                    flex-direction: column;
-                    &-title{
-                        margin-bottom: 20px;
-                        font-size: 10px;
-                    }
+        .slider-tender-item {
+            .item__bottom {
+                flex-direction: column;
+
+                &-title {
+                    margin-bottom: 20px;
+                    font-size: 10px;
                 }
-                .item{
-                    height: auto;
-                    p{
-                        font-size: 12px;
-                margin-bottom: 30px;
-                    }
-    
-                } 
             }
 
-       &__headline-link{
-        margin-top: 50px;
-       }
+            .item {
+                height: auto;
+
+                p {
+                    font-size: 12px;
+                    margin-bottom: 30px;
+                }
+
+            }
+        }
+
+        &__headline-link {
+            margin-top: 50px;
+        }
+
         .slider-prevTender,
         .slider-nextTender {
             right: 50%;
@@ -257,12 +402,15 @@ color: rgba(72, 72, 72, 1);
             margin-top: 50px;
             transform: translateX(-50%);
         }
-    
-        .slider-prevTender {margin-left: 0px;}
-        .slick-disabled{
+
+        .slider-prevTender {
+            margin-left: 0px;
+        }
+
+        .slick-disabled {
             background-color: #F2F2F25E !important;
         }
-    
+
         .slider-nextTender {
             bottom: -3px;
 

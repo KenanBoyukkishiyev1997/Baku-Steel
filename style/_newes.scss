@@ -230,6 +230,191 @@
 
 }
 
+
+.mediaPage{
+&__grid{
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 78px;
+
+}
+
+&__headline {
+    width: 780px;
+    color: #484848;
+    width: 100%;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        background-color: #9F2D2D;
+        width: 2px;
+        left: -40px;
+    }
+
+    &-link {
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 23px;
+        color: rgba(159, 45, 45, 1);
+        text-decoration: none;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(159, 45, 45, 1);
+    }
+
+    &-list {
+        list-style: none;
+        display: flex;
+
+        .active {
+            background-color: rgba(72, 72, 72, 1);
+            color: #fff;
+        }
+    }
+
+    &-item {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+        line-height: 12px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-right: 20px;
+        color: rgba(50, 51, 50, 1);
+        width: 80px;
+        height: 31px;
+        padding: 18px 10px;
+        border-radius: 4px;
+        background-color: rgba(222, 222, 222, 1);
+        transition: all .5s ease-in;
+
+        &:hover {
+            background-color: rgba(72, 72, 72, 1);
+            color: #fff;
+        }
+
+    }
+
+    .info {
+        font-family: ' Bai Jamjuree', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25px;
+        display: flex;
+        color: #A6A6A6;
+        align-items: center;
+
+
+    }
+
+    .title {
+        padding-top: 5px;
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 60px;
+        margin-bottom: 20px;
+
+    }
+
+    .text {
+        padding-top: 44px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: 0.005em;
+
+    }
+}
+
+
+    .item {
+    margin-top: 70px;
+
+        padding: 55px 44px;
+        background-color: rgba(245, 245, 245, 1);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 375px;
+        height: 390px;
+
+&-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+height: 100%;
+}
+
+        transition: background .5s ease-in;
+        &:hover {
+            background-image: linear-gradient(180deg, #9F2D2D 19.79%, rgba(159, 45, 45, 0) 100%), url('../img/newes/newes1.png');
+            transition: all .5s ease-in-out;
+
+            .item__bottom-title {
+                color: #fff;
+                transition: all .5s ease-in-out;
+
+            }
+
+            .item__bottom-text {
+                color: #F9F9F9;
+                transition: all .5s ease-in-out;
+
+            }
+
+            p {
+                color: #fff;
+                transition: all .5s ease-in-out;
+
+            }
+        }
+
+        &__bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid #B2B2B2;
+            padding-top: 11px;
+
+            &-title {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 64px;
+                font-weight: 700;
+                line-height: 78px;
+                color: rgba(159, 45, 45, 0.87);
+            }
+
+            &-text {
+
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 15px;
+                color: #484848;
+            }
+        }
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 17px;
+            color: #484848;
+        }
+    }
+
+}
+
+
 @media screen and (max-width: 1250px) {
 
    

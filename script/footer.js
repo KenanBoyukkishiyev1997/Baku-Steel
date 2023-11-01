@@ -67,5 +67,4 @@ export function footer(){
 </footer>`;
 
     footer.appendChild(footerText);
-
 }
