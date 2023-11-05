@@ -6,30 +6,67 @@
         display: flex;
     }
 
+
+
     .sidebar {
         margin-right: 50px;
 
+        .sidebar__sub {
+            display: none;
+            border-left: 1px solid #DEDEDE;
+            margin: 20px;
+
+
+            li {
+                border-bottom: 0 solid;
+                padding: 0;
+                height: auto;
+                padding-left: 12px;
+
+                a {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    color: #484848;
+
+                    &.active {
+                        color: #A84141 !important;
+                    }
+                }
+            }
+        }
+
         ul {
             list-style: none;
-            display: block;
             width: 330px;
 
             li {
                 &.active {
                     background-color: #A84141;
 
+                    a {
                         color: #fff;
+
+                    }
+
                 }
 
                 height: 56px;
                 padding: 10px 99px 10px 10px;
                 border-bottom: 1px solid #A84141;
-                font-family: 'Bai Jamjuree', sans-serif;
+                font-family: 'Bai Jamjuree',
+                sans-serif;
                 font-size: 14px;
                 font-weight: 600;
                 line-height: 36px;
                 color: #A84141;
-                   
+
+                a {
+                    font-size: 14px;
+                    color: #A84141;
+                }
+
             }
         }
     }
@@ -54,8 +91,8 @@
 
         }
 
-        &__text{
-            font-family: 'Montserrat' , sans-serif;
+        &__text {
+            font-family: 'Montserrat', sans-serif;
             font-size: 16px;
             font-weight: 500;
             line-height: 25px;
@@ -63,38 +100,42 @@
             color: #5F605F;
             margin-bottom: 20px;
         }
+
         &List {
             margin-bottom: 20px;
             margin-left: 20px;
+
             li {
-                font-family: 'Montserrat' , sans-serif;
+                font-family: 'Montserrat', sans-serif;
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 25px;
                 letter-spacing: 0.005em;
                 color: #5F605F;
 
-               
+
             }
 
-            .info__listSubtitle{
+            .info__listSubtitle {
                 margin-left: 20px;
                 list-style: disc;
             }
         }
     }
 
-    .tab-link{
+    .tab-link {
         cursor: pointer;
     }
 
-    .info, .members {
+    .info,
+    .members {
         display: none;
     }
-    
+
     /* Display the active section */
-    .info.active, .members.active {
+    .info.active,
+    .members.active {
         display: block;
     }
-    
+
 }

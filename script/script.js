@@ -7,6 +7,9 @@ import {tenderSlider} from './tenderSlider.js'
 import {ecologicSlider} from './ecologic.js'
 import {tabAbout} from './tabAbout.js'
 import {mediaSlick} from './mediaSlick.js'
+
+import {CertificatToggle} from './CertificatToggle.js'
+CertificatToggle()
 mediaSlick()
 
 tenderSlider()

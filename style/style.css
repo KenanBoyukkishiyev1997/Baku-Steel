@@ -659,6 +659,21 @@ main {
     right: 40%;
   }
 }
+.sidebarInfo .slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.product__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #5F605F;
+}
+
 .ecologic {
   padding: 60px;
   position: relative;
@@ -1639,9 +1654,29 @@ main {
 .sidebarInfo .sidebar {
   margin-right: 50px;
 }
+.sidebarInfo .sidebar .sidebar__sub {
+  display: none;
+  border-left: 1px solid #DEDEDE;
+  margin: 20px;
+}
+.sidebarInfo .sidebar .sidebar__sub li {
+  border-bottom: 0 solid;
+  padding: 0;
+  height: auto;
+  padding-left: 12px;
+}
+.sidebarInfo .sidebar .sidebar__sub li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #484848;
+}
+.sidebarInfo .sidebar .sidebar__sub li a.active {
+  color: #A84141 !important;
+}
 .sidebarInfo .sidebar ul {
   list-style: none;
-  display: block;
   width: 330px;
 }
 .sidebarInfo .sidebar ul li {
@@ -1656,7 +1691,13 @@ main {
 }
 .sidebarInfo .sidebar ul li.active {
   background-color: #A84141;
+}
+.sidebarInfo .sidebar ul li.active a {
   color: #fff;
+}
+.sidebarInfo .sidebar ul li a {
+  font-size: 14px;
+  color: #A84141;
 }
 .sidebarInfo .info__title {
   font-family: "Bai Jamjuree", sans-serif;
@@ -1701,10 +1742,12 @@ main {
 .sidebarInfo .tab-link {
   cursor: pointer;
 }
-.sidebarInfo .info, .sidebarInfo .members {
+.sidebarInfo .info,
+.sidebarInfo .members {
   display: none;
 }
-.sidebarInfo .info.active, .sidebarInfo .members.active {
+.sidebarInfo .info.active,
+.sidebarInfo .members.active {
   display: block;
 }
 
@@ -1927,11 +1970,17 @@ main {
 .certificat__box {
   border-bottom: 1px solid grey;
 }
+.certificat__box .toggle-link {
+  cursor: pointer;
+}
 .certificat__box-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
+}
+.certificat__box-drop {
+  display: none;
 }
 .certificat__box-pdf {
   display: flex;
@@ -1945,6 +1994,28 @@ main {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
+}
+.certificat__box-faqTitle {
+  font-family: "Bai Jamjuree";
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #696871;
+}
+.certificat__box-faqTitle.active {
+  color: #000;
+  font-weight: 600;
+}
+.certificat__box-faqText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  opacity: 0.5;
+  padding: 15px 0 22px;
+  width: 800px;
 }
 .certificat__box-link {
   font-family: "Montserrat", sans-serif;
@@ -1966,6 +2037,24 @@ main {
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
+  padding-bottom: 20px;
+}
+
+.faq__title {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+.faq__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 428px;
+  margin: auto;
+  text-align: center;
+  opacity: 0.5;
   padding-bottom: 20px;
 }
 
@@ -2202,4 +2291,7 @@ main {
   .footer {
     height: auto;
   }
+}
+.w-100 {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

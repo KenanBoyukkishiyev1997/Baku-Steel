@@ -212,3 +212,22 @@ background-size: cover;
         }
     }
 }
+
+
+.sidebarInfo{
+.slick-track{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+}
+
+
+.product__text{
+    font-family: 'Montserrat' , sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 36px;
+color: #5F605F;
+}
