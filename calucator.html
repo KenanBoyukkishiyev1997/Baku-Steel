@@ -7,7 +7,9 @@
 
     <title>Document</title>
     <link rel="stylesheet" href="./style/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&family=Montserrat:wght@100;400;500;700;900&family=Poppins:wght@100;300;500;600&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&family=Montserrat:wght@100;400;500;700;900&family=Poppins:wght@100;300;500;600&family=Quicksand:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
@@ -46,16 +48,16 @@
                         <ul>
                             <li class="" class="info"><a href="#">Konveyer Məhsulları</a></li>
                             <li class="tab-link  subDrop"><a href="#"> Konveyer Olmayan Məhsullar</a> </li>
-                                <ul class="sidebar__sub" >
-                                    <li><a href="#">Bucaqlıq</a></li>
-                                    <li><a href="#">İkitavr</a></li>
-                                    <li><a href="#">Şveller</a></li>
-                                    <li><a class="" href="#">Kvadrat</a></li>
-                                </ul>
+                            <ul class="sidebar__sub">
+                                <li><a href="#">Bucaqlıq</a></li>
+                                <li><a href="#">İkitavr</a></li>
+                                <li><a href="#">Şveller</a></li>
+                                <li><a class="active" href="#">Kvadrat</a></li>
+                            </ul>
 
                             <li class=""><a href="#">Kataloq</a></li>
-                            <li class="tab-link  subDrop"><a href="#">Sifariş</a></li>
-                            <ul class="sidebar__sub" >
+                            <li class="tab-link active subDrop"><a href="#">Sifariş</a></li>
+                            <ul class="sidebar__sub">
                                 <li><a href="#">Bucaqlıq</a></li>
                                 <li><a class="active" href="#">Kvadrat</a></li>
                             </ul>
@@ -65,79 +67,41 @@
 
 
                     <div class="w-100">
-                    <h1 class="info__title">Korporativ Sifariş </h1>
-<form action="" style="display: block;">
-    <div class="contact__form-group">
+                        <h1 class="info__title">Korporativ Sifariş </h1>
+                        <form action="" style="display: block;">
+                            <div class="contact__form-group">
 
-        <select name="" id="" class="w-100">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-        </select>
-</div>
-
-
-    <div class="contact__form-group">
-        <input class="contact__form-input w-100" type="text" id="fullName" placeholder=" ">
-        <label class="contact__form-label " for="fullName"> Ad Soyad</label>
-    </div>
-
-    <div class="contact__form-group">
-        <input class="contact__form-input w-100" type="text" id="factory" placeholder=" ">
-        <label class="contact__form-label " for="factory"> Ad Şirkətin adı</label>
-    </div>
+                                <select name="" id="" class="w-100">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
 
 
-    <div class="contact__form-group">
-        <input class="contact__form-input w-100" type="text" id="position" placeholder=" ">
-        <label class="contact__form-label " for="position">  Vəzifə </label>
-    </div>
+                            <div class="contact__form-flex ">
 
-    <div class="contact__form-group">
-        <input class="contact__form-input w-100" type="text" id="factoryAddress" placeholder=" ">
-        <label class="contact__form-label " for="factoryAddress">  Şirkətin ünnvanı </label>
-    </div>
+                                <div class="contact__form-group w-100">
+                                    <input class="contact__form-input w-100" type="number" id="lng" placeholder=" ">
+                                    <label class="contact__form-label" for="lng"> Uzunluq </label>
+                                </div>
 
-    <div class="contact__form-group">
-        <input class="contact__form-input w-100" type="text" id="skill" placeholder=" ">
-        <label class="contact__form-label " for="skill">  Fəaliyyət sahəsi seçin  </label>
-    </div>
+                                <div class="contact__form-group w-100">
+                                    <input class="contact__form-input w-100 " type="number" id="with" placeholder=" ">
+                                    <label class="contact__form-label" for="with"> Çəki </label>
+                                </div>
+                            </div>
 
-    <div class="contact__form-group">
-        <input class="contact__form-input w-100" type="number" id="contact" placeholder=" ">
-        <label class="contact__form-label " for="contact">  Əlaqə nömrəsi   </label>
-    </div>
+                            <div class="contact__form-group w-100 " style="display: flex;
+                            align-items: center;
+                            justify-content: flex-end;">
+                                <input class="contact__form-input submitForm "  type="submit" value="Hesabla">
+                            </div>
 
-
-    <div class="contact__form-group">
-        <input class="contact__form-input w-100" type="email" id="email" placeholder=" ">
-        <label class="contact__form-label " for="email">   E mail   </label>
-    </div>
-    
-
-    <div class="contact__form-group">
-        <label class="contact__form-label" for="msg"> Mesaj</label>
-
-        <textarea class="contact__form-input w-100" name="" id="msg" cols="30" rows="10"
-            placeholder="">
-        </textarea>
-    </div>
-    
-
-    <div class="contact__form-group w-100 " style="display: flex;
-    align-items: center;
-    justify-content: flex-end; margin: 0;">
-        <input class="contact__form-input submitForm "  type="submit" value="Hesabla">
-    </div>
-</form>
-                      
+                        </form>
                     </div>
-
-                   
-
                 </div>
-
             </div>
 
         </section>
@@ -211,16 +175,16 @@
         });
 
         let subDrop = document.querySelectorAll('.subDrop');
-subDrop.forEach((item) => {
-    item.addEventListener('click', () => {
-        let tabLinkSub = item.nextElementSibling; // Find the corresponding tab-link-sub
-        if (tabLinkSub.style.display === 'block') {
-            tabLinkSub.style.display = 'none';
-        } else {
-            tabLinkSub.style.display = 'block';
-        }
-    });
-});
+        subDrop.forEach((item) => {
+            item.addEventListener('click', () => {
+                let tabLinkSub = item.nextElementSibling; // Find the corresponding tab-link-sub
+                if (tabLinkSub.style.display === 'block') {
+                    tabLinkSub.style.display = 'none';
+                } else {
+                    tabLinkSub.style.display = 'block';
+                }
+            });
+        });
     </script>
 </body>
 

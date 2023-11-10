@@ -30,7 +30,7 @@ main {
   position: absolute;
   overflow-x: hidden;
   width: 100%;
-  height: auto;
+  height: 300px;
   top: 0;
 }
 .header .logo__img {
@@ -1751,6 +1751,14 @@ main {
   display: block;
 }
 
+@media screen and (max-width: 1000px) {
+  .sidebar ul {
+    width: 100% !important;
+  }
+  .sidebarInfo__flex {
+    display: block;
+  }
+}
 .banner {
   height: 512px;
   width: 100%;
@@ -1850,6 +1858,13 @@ main {
   color: #323332;
 }
 
+@media screen and (max-width: 1000px) {
+  .members__gird,
+  .tenderPage__grid,
+  .mediaPage__grid {
+    grid-template-columns: 1fr;
+  }
+}
 .pagination {
   margin-top: 100px;
   display: flex;
@@ -1957,6 +1972,58 @@ main {
   justify-content: space-between;
 }
 
+.submitForm {
+  width: 154px;
+  height: 48px;
+  padding: 0 50px;
+  margin: 0;
+  background-color: #9F2D2D;
+  font-family: "Bai Jamjuree";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #fff;
+}
+
+select {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 300px;
+  height: 48px;
+  transition: 0.2s;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  background-color: #F0F0F3;
+  border-radius: 2px;
+}
+select:not(:-moz-placeholder-shown) + label {
+  top: 5px;
+  font-size: 12px;
+  color: #555;
+  outline: none;
+}
+select:focus + label, select:not(:placeholder-shown) + label {
+  top: 5px;
+  font-size: 12px;
+  color: #555;
+  outline: none;
+}
+select:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact__flex,
+  .contact__form-flex {
+    display: block;
+  }
+  .contact__form-input,
+  .contact__form select {
+    width: 100%;
+  }
+}
 .certificat {
   position: relative;
   display: none;
@@ -2056,6 +2123,40 @@ main {
   text-align: center;
   opacity: 0.5;
   padding-bottom: 20px;
+}
+
+.careerList {
+  margin-top: 10px;
+}
+
+.careerList-box {
+  height: 90px;
+  padding: 22px 20px;
+  border-bottom: 1px solid #828282;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.careerList-box:hover {
+  background-color: #F6F6F6;
+}
+
+.careerTitle {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 8px;
+  color: #9F2D2D;
+}
+
+.careerText {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 13px;
+  color: #696871;
 }
 
 .footer {

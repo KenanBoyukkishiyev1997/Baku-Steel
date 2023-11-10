@@ -139,3 +139,17 @@
     }
 
 }
+
+
+@media screen and (max-width:1000px) {
+    .sidebar{
+        ul{
+            width: 100% !important;
+
+        }
+    }
+
+    .sidebarInfo__flex{
+        display: block;
+    }
+}

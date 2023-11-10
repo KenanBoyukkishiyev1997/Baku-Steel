@@ -1,0 +1,35 @@
+.careerList{
+    margin-top: 10px;
+}
+
+.careerList-box{
+height: 90px;
+padding: 22px 20px;
+border-bottom: 1px solid #828282 ;
+background-color: #fff;
+
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover{
+        background-color: #F6F6F6;
+    }
+}
+
+.careerTitle{
+    font-family: 'Bai Jamjuree' , sans-serif;
+font-size: 21px;
+font-weight: 500;
+line-height: 26px;
+margin-bottom: 8px;
+color: #9F2D2D;
+}
+
+.careerText{
+    font-family: 'Bai Jamjuree' , sans-serif;
+font-size: 10px;
+font-weight: 500;
+line-height: 13px;
+color: #696871;
+}

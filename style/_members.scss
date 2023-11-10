@@ -36,3 +36,16 @@ color: #323332;
         }
     }
 }
+
+
+
+
+@media screen and (max-width:1000px) {
+    .members__gird,
+    .tenderPage__grid,
+   .mediaPage__grid{
+        grid-template-columns: 1fr;
+    }
+
+    
+}
