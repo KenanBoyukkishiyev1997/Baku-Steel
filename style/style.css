@@ -2159,6 +2159,150 @@ select:focus {
   color: #696871;
 }
 
+.understanding {
+  position: relative;
+}
+.understanding__boxRight {
+  position: relative;
+  display: flex;
+  margin-bottom: 180px;
+}
+.understanding__boxRight img {
+  width: 554px;
+  height: 343px;
+}
+.understanding__boxRight__position {
+  position: absolute;
+  right: 0;
+}
+.understanding__boxRight-title {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: right;
+  margin-right: 60px;
+}
+.understanding__boxRight-subtitle {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 80px;
+  color: rgba(154, 42, 44, 0.3);
+}
+.understanding__boxRight-text {
+  width: 650px;
+  height: 319px;
+  padding: 60px;
+  background-color: #F2F2F2;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #5F605F;
+}
+.understanding__boxLeft {
+  position: relative;
+  margin-bottom: 180px;
+  display: flex;
+}
+.understanding__boxLeft img {
+  width: 554px;
+  height: 343px;
+}
+.understanding__boxLeft__position {
+  position: absolute;
+  left: 0;
+}
+.understanding__boxLeft-flexEnd {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  width: 100%;
+}
+.understanding__boxLeft-title {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: left;
+  margin-left: 60px;
+}
+.understanding__boxLeft-subtitle {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 80px;
+  color: rgba(154, 42, 44, 0.3);
+}
+.understanding__boxLeft-text {
+  width: 650px;
+  height: 319px;
+  padding: 60px;
+  background-color: #F2F2F2;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #5F605F;
+}
+
+@media screen and (max-width: 1200px) {
+  .understanding__boxRight {
+    display: block;
+  }
+  .understanding__boxRight img {
+    width: 100%;
+  }
+  .understanding__boxRight__position {
+    position: relative;
+  }
+  .understanding__boxRight-flexEnd {
+    display: block;
+  }
+  .understanding__boxRight-title {
+    font-size: 20px;
+    text-align: center;
+    line-height: unset;
+    margin-right: 0;
+  }
+  .understanding__boxRight-subtitle {
+    font-size: 18px;
+    line-height: unset;
+  }
+  .understanding__boxRight-text {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .understanding__boxLeft {
+    display: block;
+  }
+  .understanding__boxLeft img {
+    width: 100%;
+  }
+  .understanding__boxLeft__position {
+    position: relative;
+  }
+  .understanding__boxLeft-flexEnd {
+    display: block;
+  }
+  .understanding__boxLeft-title {
+    font-size: 20px;
+    text-align: center;
+    line-height: unset;
+    margin-left: 0;
+  }
+  .understanding__boxLeft-subtitle {
+    font-size: 18px;
+    line-height: unset;
+  }
+  .understanding__boxLeft-text {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+}
 .footer {
   background-image: url("../img/footer/footerBg.png");
   height: 800px;
