@@ -1217,7 +1217,41 @@ main {
   color: rgb(144, 144, 144);
 }
 
+.mediaPageDetailWidth {
+  width: 700px;
+}
+
+.mediaPageDetailFlex {
+  display: flex;
+}
+
+.mediaPageDetailBox {
+  width: 700px;
+  margin-right: 74px;
+}
+.mediaPageDetailBox .slider img {
+  width: 700px;
+  height: 422px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.mediaPageDetailBox .slider-nav img {
+  width: 94px;
+  height: 64px;
+}
+
 @media screen and (max-width: 1250px) {
+  .mediaPage__newsList-box {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .mediaPage__newsList-box img {
+    width: 100% !important;
+  }
+  .mediaPage__newsList-box-text {
+    line-height: unset;
+  }
   .newes .newes__headline-list {
     flex-wrap: wrap;
     align-items: center;
@@ -1255,6 +1289,22 @@ main {
   .newes .slider-next {
     bottom: -4px;
     right: 40%;
+  }
+  .mediaPageDetailWidth {
+    width: 100% !important;
+  }
+  .mediaPageDetailFlex {
+    display: block !important;
+  }
+  .mediaPageDetailBox {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+  .mediaPageDetailBox .slider img {
+    width: 100% !important;
+  }
+  .mediaPageDetailBox .slider-nav img {
+    width: 94px;
   }
 }
 /* Add Bootstrap styles here */
