@@ -161,15 +161,16 @@
             background-size: cover;
             background-repeat: no-repeat;
 
-    &-flex{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        height: 390px;
+            &-flex {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                height: 390px;
 
-    }
+            }
 
             transition: background .5s ease-in;
+
             &:hover {
                 background-image: linear-gradient(180deg, #9F2D2D 19.79%, rgba(159, 45, 45, 0) 100%), url('../img/newes/newes1.png');
                 transition: all .5s ease-in-out;
@@ -231,114 +232,114 @@
 }
 
 
-.mediaPage{
-&__grid{
-    display: grid;
+.mediaPage {
+    &__grid {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 78px;
 
-}
-
-&__headline {
-    width: 780px;
-    color: #484848;
-    width: 100%;
-    position: relative;
-
-    &::before {
-        content: '';
-        position: absolute;
-        height: 100%;
-        background-color: #9F2D2D;
-        width: 2px;
-        left: -40px;
     }
 
-    &-link {
-        font-family: 'Bai Jamjuree', sans-serif;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 23px;
-        color: rgba(159, 45, 45, 1);
-        text-decoration: none;
-        padding-bottom: 10px;
-        border-bottom: 1px solid rgba(159, 45, 45, 1);
-    }
+    &__headline {
+        width: 780px;
+        color: #484848;
+        width: 100%;
+        position: relative;
 
-    &-list {
-        list-style: none;
-        display: flex;
-
-        .active {
-            background-color: rgba(72, 72, 72, 1);
-            color: #fff;
-        }
-    }
-
-    &-item {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 10px;
-        font-weight: 500;
-        cursor: pointer;
-        display: flex;
-
-        align-items: center;
-        justify-content: center;
-        line-height: 12px;
-        letter-spacing: 0em;
-        text-align: left;
-        margin-right: 20px;
-        color: rgba(50, 51, 50, 1);
-        width: 80px;
-        height: 31px;
-        padding: 18px 10px;
-        border-radius: 4px;
-        background-color: rgba(222, 222, 222, 1);
-        transition: all .5s ease-in;
-
-        &:hover {
-            background-color: rgba(72, 72, 72, 1);
-            color: #fff;
+        &::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            background-color: #9F2D2D;
+            width: 2px;
+            left: -40px;
         }
 
+        &-link {
+            font-family: 'Bai Jamjuree', sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 23px;
+            color: rgba(159, 45, 45, 1);
+            text-decoration: none;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(159, 45, 45, 1);
+        }
+
+        &-list {
+            list-style: none;
+            display: flex;
+
+            .active {
+                background-color: rgba(72, 72, 72, 1);
+                color: #fff;
+            }
+        }
+
+        &-item {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+            line-height: 12px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-right: 20px;
+            color: rgba(50, 51, 50, 1);
+            width: 80px;
+            height: 31px;
+            padding: 18px 10px;
+            border-radius: 4px;
+            background-color: rgba(222, 222, 222, 1);
+            transition: all .5s ease-in;
+
+            &:hover {
+                background-color: rgba(72, 72, 72, 1);
+                color: #fff;
+            }
+
+        }
+
+        .info {
+            font-family: ' Bai Jamjuree', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 25px;
+            display: flex;
+            color: #A6A6A6;
+            align-items: center;
+
+
+        }
+
+        .title {
+            padding-top: 5px;
+            font-family: 'Bai Jamjuree', sans-serif;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 60px;
+            margin-bottom: 20px;
+
+        }
+
+        .text {
+            padding-top: 44px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 25px;
+            letter-spacing: 0.005em;
+
+        }
     }
-
-    .info {
-        font-family: ' Bai Jamjuree', sans-serif;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 25px;
-        display: flex;
-        color: #A6A6A6;
-        align-items: center;
-
-
-    }
-
-    .title {
-        padding-top: 5px;
-        font-family: 'Bai Jamjuree', sans-serif;
-        font-size: 48px;
-        font-weight: 600;
-        line-height: 60px;
-        margin-bottom: 20px;
-
-    }
-
-    .text {
-        padding-top: 44px;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 25px;
-        letter-spacing: 0.005em;
-
-    }
-}
 
 
     .item {
-    margin-top: 70px;
+        margin-top: 70px;
 
         padding: 55px 44px;
         background-color: rgba(245, 245, 245, 1);
@@ -347,14 +348,15 @@
         width: 375px;
         height: 390px;
 
-&-flex{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-height: 100%;
-}
+        &-flex {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 100%;
+        }
 
         transition: background .5s ease-in;
+
         &:hover {
             background-image: linear-gradient(180deg, #9F2D2D 19.79%, rgba(159, 45, 45, 0) 100%), url('../img/newes/newes1.png');
             transition: all .5s ease-in-out;
@@ -412,37 +414,74 @@ height: 100%;
         }
     }
 
+
+    &__newsList {
+        &-box {
+            background-color: rgba(241, 241, 241, 1);
+            height: 155px;
+            padding: 20px;
+            width: 532px;
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 20px;
+            }
+
+            &-text {
+                font-family: 'Bai Jamjuree', sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 36px;
+
+            }
+
+            &-span {
+                font-family: 'Bai Jamjuree', sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 35px;
+                color: rgba(144, 144, 144, 1);
+            }
+
+        }
+    }
+
 }
 
 
 @media screen and (max-width: 1250px) {
 
-   
+
     .newes {
-        .newes__headline-list{
+        .newes__headline-list {
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
 
-            li{
+            li {
                 margin-bottom: 30px;
             }
         }
-         .slider-newes-item {
-            .item{
+
+        .slider-newes-item {
+            .item {
                 padding: 20px;
-                p{
+
+                p {
                     font-size: 12px;
                 }
             }
 
-            .item__bottom-title{
+            .item__bottom-title {
                 font-size: 30px;
             }
-         }
-       &__headline-link{
-        margin-top: 50px;
-       }
+        }
+
+        &__headline-link {
+            margin-top: 50px;
+        }
+
         .slider-prev,
         .slider-next {
             position: relative;
@@ -451,12 +490,15 @@ height: 100%;
             margin-top: 50px;
             transform: translateX(-50%);
         }
-    
-        .slider-prev {margin-left: 0px;}
-        .slick-disabled{
+
+        .slider-prev {
+            margin-left: 0px;
+        }
+
+        .slick-disabled {
             background-color: #F2F2F25E !important;
         }
-    
+
         .slider-next {
             bottom: -4px;
 

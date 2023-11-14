@@ -1192,6 +1192,30 @@ main {
   line-height: 17px;
   color: #484848;
 }
+.mediaPage__newsList-box {
+  background-color: rgb(241, 241, 241);
+  height: 155px;
+  padding: 20px;
+  width: 532px;
+  display: flex;
+  align-items: center;
+}
+.mediaPage__newsList-box img {
+  margin-right: 20px;
+}
+.mediaPage__newsList-box-text {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.mediaPage__newsList-box-span {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 35px;
+  color: rgb(144, 144, 144);
+}
 
 @media screen and (max-width: 1250px) {
   .newes .newes__headline-list {
