@@ -26,8 +26,7 @@ export function header() {
               <img src='./img/svg/arrowLang.svg' /> 
               </div>
               <div class="dropdown-content">
-              <a href="#" data-language="AZ">AZ</a>
-
+                <a href="#" data-language="AZ">AZ</a>
                 <a href="#" data-language="RU">RU</a>
                 <a href="#"data-language="EN">EN</a>
               </div>
@@ -42,13 +41,12 @@ export function header() {
   <ul class='barMob__list'>
   <li class='barMob__item barMob__close'> <a href="#"> x </a></li>
 
-  <li class='barMob__item'> <a href="#"> Sİfarİş </a></li>
-  <li class='barMob__item'> <a href="#"> TEnder elanlari </a></li>
-  <li class='barMob__item'> <a href="#"> TEnder elanlari </a></li>
-  <li class='barMob__item'> <a href="#"> MedİA </a> </li>
-  <li class='barMob__item'> <a href="#"> KARYERA </a> </li>
-  <li class='barMob__item'> <a href="#"> faq </a> </li>
-  <li class='barMob__item'> <a href="#"> Əlaqə </a> </li>
+  <li class='barMob__item'> <a href="calucator.html"> Sİfariş </a></li>
+  <li class='barMob__item'> <a href="tender.html"> Tender elanlari </a></li>
+  <li class='barMob__item'> <a href="media.html"> Media </a> </li>
+  <li class='barMob__item'> <a href="career.html"> Karyera </a> </li>
+  <li class='barMob__item'> <a href="faq.html"> Faq </a></li>
+  <li class='barMob__item'> <a href="contact.html"> Əlaqə </a> </li>
 
   <li class='barMob__item barMob__itemHideMob'>  <form class="header__box-form" >
   <div class='header__box-group'>
