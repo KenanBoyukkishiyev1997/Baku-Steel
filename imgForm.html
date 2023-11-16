@@ -67,16 +67,6 @@
                     <div class="w-100">
                     <h1 class="info__title">Korporativ Sifariş </h1>
 <form action="" style="display: block;">
-    <div class="contact__form-group">
-
-        <select name="" id="" class="w-100">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-        </select>
-</div>
-
 
     <div class="contact__form-group">
         <input class="contact__form-input w-100" type="text" id="fullName" placeholder=" ">
@@ -94,15 +84,6 @@
         <label class="contact__form-label " for="position">  Vəzifə </label>
     </div>
 
-    <div class="contact__form-group">
-        <input class="contact__form-input w-100" type="text" id="factoryAddress" placeholder=" ">
-        <label class="contact__form-label " for="factoryAddress">  Şirkətin ünnvanı </label>
-    </div>
-
-    <div class="contact__form-group">
-        <input class="contact__form-input w-100" type="text" id="skill" placeholder=" ">
-        <label class="contact__form-label " for="skill">  Fəaliyyət sahəsi seçin  </label>
-    </div>
 
     <div class="contact__form-group">
         <input class="contact__form-input w-100" type="number" id="contact" placeholder=" ">
@@ -114,11 +95,16 @@
         <input class="contact__form-input w-100" type="email" id="email" placeholder=" ">
         <label class="contact__form-label " for="email">   E mail   </label>
     </div>
+
+
+
     
-
     <div class="contact__form-group">
+        <div class="contact__form-input w-100" style="height: auto;">
+            <input  type="file" id="fileInput" style="visibility: hidden;" >
+            <img src="./img/file/file.png"  id="imagePreview" style="cursor: pointer;  " alt="file.png">
 
-        <textarea class="contact__form-input w-100" id="msg" style="height: 200px;" placeholder="Message"></textarea>
+        </div>
     </div>
     
 
@@ -147,7 +133,29 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-      
+    <script>
+        $(document).ready(function () {
+            // Trigger click on file input when the image is clicked
+            $('#imagePreview').click(function () {
+                $('#fileInput').click();
+            });
+    
+            // Display selected image
+            $('#fileInput').change(function () {
+                var input = this;
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        $('#imagePreview').attr('src', e.target.result);
+                        $('#imagePreview').css('height', '300px');
+                        $('#imagePreview').css('width', '300px');
+
+                    };
+                    reader.readAsDataURL(input.files[0]);
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

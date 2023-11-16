@@ -2,6 +2,14 @@
   margin: 60px 0;
 }
 
+
+
+textarea {
+  width: 100%;
+  background-color: #F0F0F3;
+}
+
+
 .contact__form {
   &-flex {
     display: flex;
@@ -27,12 +35,6 @@
     font-weight: 500;
     line-height: 15px;
 
-  }
-
-
-  textarea {
-    width: 100%;
-    background-color: #F0F0F3;
   }
 
   &-input,

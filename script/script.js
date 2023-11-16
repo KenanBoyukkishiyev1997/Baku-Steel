@@ -23,4 +23,17 @@ barToggle()
 scrollpage()
 
 
+let subDrop = document.querySelectorAll('.subDrop');
+subDrop.forEach((item) => {
+    item.addEventListener('click', () => {
+        let tabLinkSub = item.nextElementSibling; // Find the corresponding tab-link-sub
+        if (tabLinkSub.style.display === 'block') {
+            tabLinkSub.style.display = 'none';
+        } else {
+            tabLinkSub.style.display = 'block';
+        }
+    });
+});
+
+
 
