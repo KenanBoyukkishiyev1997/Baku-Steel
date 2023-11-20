@@ -37,3 +37,20 @@ subDrop.forEach((item) => {
 
 
 
+    // Trigger click on file input when the image is clicked
+    $('#imagePreview').click(function () {
+        $('#fileInput').click();
+    });
+
+    // Display selected image
+    $('#fileInput').change(function () {
+        var input = this;
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#imagePreview').attr('src', e.target.result);
+                $('#imagePreview').css('width', '300px');
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    });

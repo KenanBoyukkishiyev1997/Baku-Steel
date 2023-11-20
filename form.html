@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&family=Montserrat:wght@100;400;500;700;900&family=Poppins:wght@100;300;500;600&family=Quicksand:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="banner" style="background-image:url('./img/banner/aboutBanner.png');">
+            <header id="header" class="header"></header>
+
+            <div class="contanier">
+
+                <div class="banner__bottom">
+
+                    <div class="banner__links">
+                        <span></span>
+                        <ul class="banner__list">
+                            <li class="banner__list-item"><a class="banner__list-item-link" href="#">Ana səhifə</a></li>
+                            <li class="banner__list-item"><a class="banner__list-item-link" href="#">Şirkət Haqqında</a>
+                            </li>
+                            <li class="banner__list-item"><a class="banner__list-item-link" href="#">Missiya, Vizyon və
+                                    Dəyərlərimiz</a></li>
+                        </ul>
+                    </div>
+                    <h1 class="banner__title">Şirkət Haqqında</h1>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="sidebarInfo">
+            <div class="contanier">
+                <div class="sidebarInfo__flex">
+
+                    <aside class="sidebar">
+                        <ul>
+                            <li class="" class="info"><a href="#">Konveyer Məhsulları</a></li>
+                            <li class=" subDrop"><a href="#"> Konveyer Olmayan Məhsullar</a> </li>
+                            <ul class="sidebar__sub">
+                                <li><a href="#">Bucaqlıq</a></li>
+                                <li><a href="#">İkitavr</a></li>
+                                <li><a href="#">Şveller</a></li>
+                                <li><a class="" href="#">Kvadrat</a></li>
+                            </ul>
+
+                            <li class=""><a href="#">Kataloq</a></li>
+                            <li class=" active  subDrop"><a href="#">Sifariş</a></li>
+                            <ul class="sidebar__sub">
+                                <li><a href="#">Bucaqlıq</a></li>
+                                <li><a class="active" href="#">Kvadrat</a></li>
+                            </ul>
+                            <li><a href="#">Kalkulyator</a></li>
+                        </ul>
+                    </aside>
+
+
+                    <div class="w-100">
+                        <h1 class="info__title">Korporativ Sifariş </h1>
+
+
+
+                        <form action="" style="display: block;">
+
+
+                            <div class="contact__form-group">
+                                <input class="contact__form-input fileInput" style="visibility: hidden;" type="file"
+                                    accept="application/pdf">
+                                <div class="centerFlex">
+                                    <div>
+                                        <span class=" span centerFlex">
+                                            <img src="./img/file/fileFullIcon.svg" alt="fileFullIcon">
+
+                                            Müaricət Forması
+                                        </span>
+                                    </div>
+
+                                    <div>
+                                        <a href="#" style="text-decoration: underline; font-family: 'Montserrat' , sans-serif; font-size: 20px;font-weight: 500; color: #9F2D2D;">
+                                            Endir
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact__form-group">
+                                <input class="contact__form-input w-100" type="text" id="fullName" placeholder=" ">
+                                <label class="contact__form-label " for="fullName"> Ad Soyad</label>
+                            </div>
+
+                            <div class="contact__form-group">
+                                <input class="contact__form-input w-100" type="text" id="factory" placeholder=" ">
+                                <label class="contact__form-label " for="factory"> Ad Şirkətin adı</label>
+                            </div>
+
+                            <div class="contact__form-group">
+                                <input class="contact__form-input w-100" type="text" id="position" placeholder=" ">
+                                <label class="contact__form-label " for="position"> Vəzifə </label>
+                            </div>
+
+
+                            <div class="contact__form-group">
+                                <input class="contact__form-input w-100" type="number" id="contact" placeholder=" ">
+                                <label class="contact__form-label " for="contact"> Əlaqə nömrəsi </label>
+                            </div>
+
+
+                            <div class="contact__form-group">
+                                <input class="contact__form-input w-100" type="email" id="email" placeholder=" ">
+                                <label class="contact__form-label " for="email"> E mail </label>
+                            </div>
+
+
+                            <div class="contact__form-group">
+                                <input class="contact__form-input fileInput" style="visibility: hidden;" type="file"
+                                    accept="application/pdf">
+                                <div class="centerFlex">
+                                    <div>
+                                        <span class=" span centerFlex">
+                                            <img src="./img/file/fileEmptyIcon.svg" class="fileEmptyIcon"
+                                                alt="fileEmptyIcon">
+                                            <img src="./img/file/fileFullIcon.svg" class="fileFullIcon"
+                                                alt="fileFullIcon">
+
+                                            Sertifikat
+                                        </span>
+                                    </div>
+
+                                    <div class="secondFlex">
+                                        <span class="pdfSelect">Sec</span>
+                                        <div class="trashImg" style="display: none;">
+                                            <div class="line"></div>
+                                            <img src="./img/file/trash.svg" alt="trash">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact__form-group">
+                                <input class="contact__form-input fileInput" style="visibility: hidden;" type="file"
+                                    accept="application/pdf">
+                                <div class="centerFlex">
+                                    <div>
+                                        <span class=" span centerFlex">
+                                            <img src="./img/file/fileEmptyIcon.svg" class="fileEmptyIcon"
+                                                alt="fileEmptyIcon">
+                                            <img src="./img/file/fileFullIcon.svg" class="fileFullIcon"
+                                                alt="fileFullIcon">
+
+                                            Normativ sənədlər
+                                        </span>
+                                    </div>
+
+                                    <div class="secondFlex">
+                                        <span class="pdfSelect">Sec</span>
+                                        <div class="trashImg" style="display: none;">
+                                            <div class="line"></div>
+                                            <img src="./img/file/trash.svg" alt="trash">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="contact__form-group">
+                                <input class="contact__form-input fileInput" style="visibility: hidden;" type="file"
+                                    accept="application/pdf">
+                                <div class="centerFlex">
+                                    <div>
+                                        <span class="span centerFlex">
+                                            <img src="./img/file/fileEmptyIcon.svg" class="fileEmptyIcon"
+                                                alt="fileEmptyIcon">
+                                            <img src="./img/file/fileFullIcon.svg" class="fileFullIcon"
+                                                alt="fileFullIcon">
+                                            Kataloq </span>
+                                    </div>
+
+                                    <div class="secondFlex">
+                                        <span class="pdfSelect">Sec</span>
+                                        <div class="trashImg" style="display: none;">
+                                            <div class="line"></div>
+                                            <img src="./img/file/trash.svg" alt="trash">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact__form-group">
+                                <input class="contact__form-input fileInput" style="visibility: hidden;" type="file"
+                                    accept="application/pdf">
+                                <div class="centerFlex">
+                                    <div>
+                                        <span class=" span centerFlex">
+                                            <img src="./img/file/fileEmptyIcon.svg" class="fileEmptyIcon"
+                                                alt="fileEmptyIcon">
+                                            <img src="./img/file/fileFullIcon.svg" class="fileFullIcon"
+                                                alt="fileFullIcon">
+                                            Referans məktubları </span>
+                                    </div>
+
+                                    <div class="secondFlex">
+                                        <span class="pdfSelect">Sec</span>
+                                        <div class="trashImg" style="display: none;">
+                                            <div class="line"></div>
+                                            <img src="./img/file/trash.svg" alt="trash">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="contact__form-group">
+                                <input class="contact__form-input fileInput" style="visibility: hidden;" type="file"
+                                    accept="application/pdf">
+                                <div class="centerFlex">
+                                    <div>
+                                        <span class="span centerFlex">
+                                            <img src="./img/file/fileEmptyIcon.svg" class="fileEmptyIcon"
+                                                alt="fileEmptyIcon">
+                                            <img src="./img/file/fileFullIcon.svg" class="fileFullIcon"
+                                                alt="fileFullIcon"> Müraciət üçün doldurulmuş forma
+                                        </span>
+                                    </div>
+
+                                    <div class="secondFlex">
+                                        <span class="pdfSelect">Sec</span>
+                                        <div class="trashImg" style="display: none;">
+                                            <div class="line"></div>
+                                            <img src="./img/file/trash.svg" alt="trash">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact__form-group w-100 "
+                                style="display: flex; align-items: center;justify-content: flex-end; margin: 0;">
+                                <input class="contact__form-input submitForm " type="submit" value="Sifariş et">
+                            </div>
+                        </form>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div id="footer"></div>
+
+    </div>
+
+    <script type="module" src="./script/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+    <script>
+        // Trigger click on file input when the image is clicked
+        // Trigger click on file input when the "Sec" span is clicked
+        $('.pdfSelect').click(function () {
+            $(this).closest('.contact__form-group').find('.fileInput').click();
+        });
+
+        // Handle file input change event
+        $('.fileInput').change(function () {
+            var container = $(this).closest('.contact__form-group');
+
+            // Check if the selected file is a PDF
+            // Update styles and content when a PDF is selected
+            container.find('.pdfSelect').css('display', 'none'); // Hide the "Sec" span
+            container.find('.trashImg').css('display', 'flex'); // Show the trash image
+            container.find('.fileEmptyIcon').css('display', 'none'); // Show the trash image
+            container.find('.fileFullIcon').css('display', 'inline'); // Show the trash image
+
+
+
+        });
+
+        // Handle click event on the trash image
+        $('.trashImg').click(function () {
+            var container = $(this).closest('.contact__form-group');
+            // Toggle the visibility of the "Sec" span and the trash image
+            container.find('.pdfSelect').css('display', 'flex'); // Show the "Sec" span
+            container.find('.trashImg').css('display', 'none');
+
+            container.find('.fileEmptyIcon').css('display', 'inline'); // Show the trash image
+            container.find('.fileFullIcon').css('display', 'none'); // Show the trash image
+        });
+
+    </script>
+</body>
+
+</html>

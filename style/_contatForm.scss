@@ -2,13 +2,50 @@
   margin: 60px 0;
 }
 
+.trashImg{
+  display: none;
 
+  align-items: center;
+  justify-content: end;
+.line{
+  background-color: rgba(159, 45, 45, 1); height: 5px; width:50%;
+}
+  img{
+    cursor: pointer;
+  margin-left: 35px;
 
+  }
+}
+
+.secondFlex{
+  width: 50%;
+}
+.fileFullIcon{
+  display: none;
+}
 textarea {
   width: 100%;
   background-color: #F0F0F3;
 }
+.centerFlex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
+ .span{
+  font-family: 'Montserrat' , sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+ }
+
+}
+
+.pdfSelect{
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+}
 
 .contact__form {
   &-flex {

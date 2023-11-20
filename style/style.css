@@ -1956,9 +1956,50 @@ main {
   margin: 60px 0;
 }
 
+.trashImg {
+  display: none;
+  align-items: center;
+  justify-content: end;
+}
+.trashImg .line {
+  background-color: rgb(159, 45, 45);
+  height: 5px;
+  width: 50%;
+}
+.trashImg img {
+  cursor: pointer;
+  margin-left: 35px;
+}
+
+.secondFlex {
+  width: 50%;
+}
+
+.fileFullIcon {
+  display: none;
+}
+
 textarea {
   width: 100%;
   background-color: #F0F0F3;
+}
+
+.centerFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.centerFlex .span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.pdfSelect {
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
 }
 
 .contact__form-flex {

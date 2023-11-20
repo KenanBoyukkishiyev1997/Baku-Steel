@@ -133,28 +133,6 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            // Trigger click on file input when the image is clicked
-            $('#imagePreview').click(function () {
-                $('#fileInput').click();
-            });
-    
-            // Display selected image
-            $('#fileInput').change(function () {
-                var input = this;
-                if (input.files && input.files[0]) {
-                    var reader = new FileReader();
-                    reader.onload = function (e) {
-                        $('#imagePreview').attr('src', e.target.result);
-                        $('#imagePreview').css('width', '300px');
-
-                    };
-                    reader.readAsDataURL(input.files[0]);
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
