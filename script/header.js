@@ -1,90 +1,90 @@
 
 export function header() {
-  const header = document.getElementById('header');
+//   const header = document.getElementById('header');
 
-  const headerText = document.createElement('div');
+//   const headerText = document.createElement('div');
 
 
-  headerText.innerHTML = `<div class="contanier">
-    <div class="header__flex">
+//   headerText.innerHTML = `<div class="contanier">
+//     <div class="header__flex">
         
-        <div class="logo">
-            <img class="logo__img" src="./img/logo.png" alt="logo">
-        </div>
+//         <div class="logo">
+//             <img class="logo__img" src="./img/logo.png" alt="logo">
+//         </div>
 
-        <div class="header__box ">
-            <form class="header__box-form respons-desc" >
-            <div class='header__box-group'>
-            <input placeholder='Axtarış' type='text' class='header__box-input'/>
-            <img src='./img/svg/serachIcon.svg'/>
-            </div>
-            </form>
-            <div class="header__box-lang respons-desc">
-            <div class="dropdown">
-            <div class='dropdown-flex'>
-              <span class="dropbtn">AZ </span>
-              <img src='./img/svg/arrowLang.svg' /> 
-              </div>
-              <div class="dropdown-content">
-                <a href="#" data-language="AZ">AZ</a>
-                <a href="#" data-language="RU">RU</a>
-                <a href="#"data-language="EN">EN</a>
-              </div>
-            </div>
-          </div>
+//         <div class="header__box ">
+//             <form class="header__box-form respons-desc" >
+//             <div class='header__box-group'>
+//             <input placeholder='Axtarış' type='text' class='header__box-input'/>
+//             <img src='./img/svg/serachIcon.svg'/>
+//             </div>
+//             </form>
+//             <div class="header__box-lang respons-desc">
+//             <div class="dropdown">
+//             <div class='dropdown-flex'>
+//               <span class="dropbtn">AZ </span>
+//               <img src='./img/svg/arrowLang.svg' /> 
+//               </div>
+//               <div class="dropdown-content">
+//                 <a href="#" data-language="AZ">AZ</a>
+//                 <a href="#" data-language="RU">RU</a>
+//                 <a href="#"data-language="EN">EN</a>
+//               </div>
+//             </div>
+//           </div>
 
-          <div class="header__bar">
-          <img src='./img/svg/bar.svg' alt='bar' />
-  </div>
+//           <div class="header__bar">
+//           <img src='./img/svg/bar.svg' alt='bar' />
+//   </div>
 
-  <div class='barMob'>
-  <ul class='barMob__list'>
-  <li class='barMob__item barMob__close'> <a href="#"> x </a></li>
+//   <div class='barMob'>
+//   <ul class='barMob__list'>
+//   <li class='barMob__item barMob__close'> <a href="#"> x </a></li>
 
-  <li class='barMob__item'> <a href="calucator.html"> Sİfariş </a></li>
-  <li class='barMob__item'> <a href="tender.html"> Tender elanlari </a></li>
-  <li class='barMob__item'> <a href="media.html"> Media </a> </li>
-  <li class='barMob__item'> <a href="career.html"> Karyera </a> </li>
-  <li class='barMob__item'> <a href="faq.html"> Faq </a></li>
-  <li class='barMob__item'> <a href="contact.html"> Əlaqə </a> </li>
+//   <li class='barMob__item'> <a href="calucator.html"> Sİfariş </a></li>
+//   <li class='barMob__item'> <a href="tender.html"> Tender elanlari </a></li>
+//   <li class='barMob__item'> <a href="media.html"> Media </a> </li>
+//   <li class='barMob__item'> <a href="career.html"> Karyera </a> </li>
+//   <li class='barMob__item'> <a href="faq.html"> Faq </a></li>
+//   <li class='barMob__item'> <a href="contact.html"> Əlaqə </a> </li>
 
-  <li class='barMob__item barMob__itemHideMob'>  <form class="header__box-form" >
-  <div class='header__box-group'>
-  <input placeholder='Axtarış' type='text' class='header__box-input'/>
-  <img src='./img/svg/serachIcon.svg'/>
-  </div>
-  </form> </li>
-  <li class='barMob__item barMob__itemHideMob'> 
-  <div class="header__box-lang-mob">
-  <div class="dropdown">
-  <div class='dropdown-flex'>
-    <span class="dropbtn-mob">AZ </span>
-    <img src='./img/svg/arrowLang.svg' /> 
-    </div>
-    <div class="dropdown-content-mob">
-    <a href="#" data-language-mob="AZ">AZ</a>
+//   <li class='barMob__item barMob__itemHideMob'>  <form class="header__box-form" >
+//   <div class='header__box-group'>
+//   <input placeholder='Axtarış' type='text' class='header__box-input'/>
+//   <img src='./img/svg/serachIcon.svg'/>
+//   </div>
+//   </form> </li>
+//   <li class='barMob__item barMob__itemHideMob'> 
+//   <div class="header__box-lang-mob">
+//   <div class="dropdown">
+//   <div class='dropdown-flex'>
+//     <span class="dropbtn-mob">AZ </span>
+//     <img src='./img/svg/arrowLang.svg' /> 
+//     </div>
+//     <div class="dropdown-content-mob">
+//     <a href="#" data-language-mob="AZ">AZ</a>
 
-      <a href="#" data-language-mob="RU">RU</a>
-      <a href="#" data-language-mob="EN">EN</a>
-    </div>
-  </div>
-</div>
- </li>
+//       <a href="#" data-language-mob="RU">RU</a>
+//       <a href="#" data-language-mob="EN">EN</a>
+//     </div>
+//   </div>
+// </div>
+//  </li>
   
   
-  </ul>
+//   </ul>
 
 
   
-  </div>
-        </div>
+//   </div>
+//         </div>
       
 
-    </div>
+//     </div>
     
-</div>`;
+// </div>`;
 
-  header.appendChild(headerText);
+//   header.appendChild(headerText);
 
   document.querySelector(".header__bar").addEventListener("click", () => {
     document.querySelector('.barMob').style.right = '0'
